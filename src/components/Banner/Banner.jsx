@@ -65,7 +65,7 @@ const Banner = () => {
   return (
     <div>
       <div className="relative navigation-wrapper">
-        <div ref={sliderRef} className="keen-slider h-[62.0625rem] max-h-[993px]">
+        <div ref={sliderRef} className="keen-slider h-[40rem] sm:h-[62.0625rem] max-h-[993px]">
           <div className="keen-slider__slide number-slide1">
             <BannerComponent />
           </div>
@@ -107,7 +107,7 @@ function Arrow(props) {
 
 function BannerComponent() {
   return (
-    <div className="max-w-[1440px] w-10/12 mx-auto flex flex-col justify-center items-center h-full">
+    <div className="max-w-[1440px] w-10/12 mx-auto flex flex-col justify-center items-center h-full sm:pt-6 md:pt-20">
       <div className="text-white text-center">
         <motion.h1
           className="md:max-w-[48.125rem] mx-auto text-[3.125rem] md:text-[5.625rem] font-bold leading-[3.75rem] md:leading-[6.25rem] tracking-[-0.02rem]"

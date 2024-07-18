@@ -19,3 +19,9 @@ html {
     font-size: 1.11vw;
   }
 }
+
+@media screen and (min-width: 2383px) {
+  #nav-right-overlay {
+    display: none;
+  }
+}
