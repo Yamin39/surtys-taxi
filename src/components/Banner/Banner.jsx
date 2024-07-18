@@ -95,12 +95,12 @@ function Arrow(props) {
   return (
     <button
       onClick={props.onClick}
-      className={`btn-arr p-1 border-2 text-3xl sm:text-4xl md:text-5xl border-white text-white rounded-full arrow ${
+      className={`btn-arr border-[0.125rem] text-3xl sm:text-4xl md:text-6xl border-white text-white rounded-full arrow ${
         props.left ? "arrow--left" : "arrow--right"
       } ${disabled}`}
     >
-      {props.left && <IoIosArrowRoundBack className="btn-arr-child" />}
-      {!props.left && <IoIosArrowRoundForward className="btn-arr-child" />}
+      {props.left && <IoIosArrowRoundBack className="btn-arr-child relative -right-2 md:-right-4" />}
+      {!props.left && <IoIosArrowRoundForward className="btn-arr-child relative -left-2 md:-left-4" />}
     </button>
   );
 }

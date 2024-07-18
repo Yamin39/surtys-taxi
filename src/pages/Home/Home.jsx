@@ -1,6 +1,7 @@
 import Banner from "../../components/Banner/Banner";
 import Navbar from "../../components/Banner/Navbar/Navbar";
 import BookNow from "../../components/BookNow/BookNow";
+import NumbersSpeak from "../../components/NumbersSpeak/NumbersSpeak";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Navbar></Navbar>
       <Banner></Banner>
       <BookNow></BookNow>
+      <NumbersSpeak></NumbersSpeak>
       <div className="max-w-[1440px] w-10/12 mx-auto"></div>
     </div>
   );
