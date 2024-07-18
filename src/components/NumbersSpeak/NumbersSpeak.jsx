@@ -2,6 +2,7 @@ import happy from "../../assets/images/happy.png";
 import meter from "../../assets/images/meter.png";
 import people from "../../assets/images/people.png";
 import taxi from "../../assets/images/taxi.png";
+import "./NumbersSpeak.css"
 
 const NumbersSpeak = () => {
   return (
@@ -15,7 +16,7 @@ const NumbersSpeak = () => {
 
         <div className="mb-[1.875rem] grid gap-7 sm:grid-cols-2 md:grid-cols-4">
           {/* KM Driven */}
-          <div className="bg-white p-[3.4375rem] rounded-[0.625rem]">
+          <div className="stat-cards bg-white p-[3.4375rem] rounded-[0.625rem]">
             <div className="max-w-[3.75rem] max-h-[3.75rem] mx-auto">
               <img src={meter} className="size-full" alt="Meter icon" />
             </div>
@@ -24,7 +25,7 @@ const NumbersSpeak = () => {
           </div>
 
           {/* People Dropped */}
-          <div className="bg-white p-[3.4375rem] rounded-[0.625rem]">
+          <div className="stat-cards bg-white p-[3.4375rem] rounded-[0.625rem]">
             <div className="max-w-[3.75rem] max-h-[3.75rem] mx-auto">
               <img src={people} className="size-full" alt="people icon" />
             </div>
@@ -33,7 +34,7 @@ const NumbersSpeak = () => {
           </div>
 
           {/* Taxis & Drivers */}
-          <div className="bg-white p-[3.4375rem] rounded-[0.625rem]">
+          <div className="stat-cards bg-white p-[3.4375rem] rounded-[0.625rem]">
             <div className="max-w-[3.75rem] max-h-[3.75rem] mx-auto">
               <img src={taxi} className="size-full" alt="taxi icon" />
             </div>
@@ -42,7 +43,7 @@ const NumbersSpeak = () => {
           </div>
 
           {/* Happy People */}
-          <div className="bg-white p-[3.4375rem] rounded-[0.625rem]">
+          <div className="stat-cards bg-white p-[3.4375rem] rounded-[0.625rem]">
             <div className="max-w-[3.75rem] max-h-[3.75rem] mx-auto">
               <img src={happy} className="size-full" alt="happy icon" />
             </div>
