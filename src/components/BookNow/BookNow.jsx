@@ -58,7 +58,7 @@ const BookNow = () => {
           </div>
 
           <button className="font-semibold bg-primary-color text-dark text-lg rounded-[2.4375rem] py-4 px-[3.6875rem] duration-[.4s] hover:bg-white active:scale-90">
-            Learn More
+            Book Now
           </button>
         </form>
       </div>
