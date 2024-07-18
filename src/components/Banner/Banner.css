@@ -1,0 +1,68 @@
+.keen-slider__slide {
+  min-height: 0 !important;
+  max-height: 200vh !important;
+  height: 100%;
+}
+
+.number-slide1 {
+  background-image: url("../../assets/images/slide1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.number-slide2 {
+  background-image: url("../../assets/images/slide2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.btn-arr,
+.btn-arr-child {
+  transition: all 0.5s;
+}
+
+.btn-arr:hover {
+  border-color: #ffc000;
+}
+
+.btn-arr:hover .btn-arr-child {
+  color: #ffc000;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: 6.875rem;
+}
+
+.arrow--right {
+  left: auto;
+  right: 6.875rem;
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .arrow--left {
+    left: 3rem;
+  }
+
+  .arrow--right {
+    left: auto;
+    right: 3rem;
+  }
+}
