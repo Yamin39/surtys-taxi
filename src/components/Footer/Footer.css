@@ -1,0 +1,22 @@
+#footer-link-ul > li > a {
+  transition: all 0.4s ease-out;
+  display: inline-block;
+}
+
+#footer-link-ul > li > a::before {
+  transition: all 0.4s linear;
+  content: ">>";
+  color: #ffc000;
+  opacity: 0;
+  padding-right: 0rem;
+}
+
+#footer-link-ul > li > a:hover {
+  color: #ffc000;
+  transform: translateX(0.3125rem);
+}
+
+#footer-link-ul > li > a:hover::before {
+  opacity: 1;
+  padding-right: 0.375rem;
+}

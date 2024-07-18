@@ -31,22 +31,22 @@ const Navbar = () => {
           <div className="flex justify-center md:justify-end items-center">
             <ul className="flex gap-6 items-center">
               <li>
-                <a href="#">
+                <a href="#" className="duration-300 hover:text-primary-color">
                   <FaTwitter className="text-lg" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" className="duration-300 hover:text-primary-color">
                   <FaFacebookF className="text-base" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" className="duration-300 hover:text-primary-color">
                   <FaYoutube className="text-lg" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" className="duration-300 hover:text-primary-color">
                   <FaGooglePlusG className="text-2xl" />
                 </a>
               </li>

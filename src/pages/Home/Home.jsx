@@ -3,6 +3,7 @@ import Navbar from "../../components/Banner/Navbar/Navbar";
 import BookNow from "../../components/BookNow/BookNow";
 import CallAgent from "../../components/CallAgent/CallAgent";
 import CallNowBottom from "../../components/CallNowBottom/CallNowBottom";
+import Footer from "../../components/Footer/Footer";
 import NumbersSpeak from "../../components/NumbersSpeak/NumbersSpeak";
 import TaxiFares from "../../components/TaxiFares/TaxiFares";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
@@ -19,6 +20,7 @@ const Home = () => {
       <WhyChooseUs></WhyChooseUs>
       <TaxiFares></TaxiFares>
       <CallNowBottom></CallNowBottom>
+      <Footer></Footer>
     </div>
   );
 };
