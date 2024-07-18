@@ -2,6 +2,7 @@ import Banner from "../../components/Banner/Banner";
 import Navbar from "../../components/Banner/Navbar/Navbar";
 import BookNow from "../../components/BookNow/BookNow";
 import CallAgent from "../../components/CallAgent/CallAgent";
+import CallNowBottom from "../../components/CallNowBottom/CallNowBottom";
 import NumbersSpeak from "../../components/NumbersSpeak/NumbersSpeak";
 import TaxiFares from "../../components/TaxiFares/TaxiFares";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
@@ -17,7 +18,7 @@ const Home = () => {
       <CallAgent></CallAgent>
       <WhyChooseUs></WhyChooseUs>
       <TaxiFares></TaxiFares>
-      <div className="max-w-[1440px] w-10/12 mx-auto"></div>
+      <CallNowBottom></CallNowBottom>
     </div>
   );
 };
