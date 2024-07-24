@@ -4,6 +4,7 @@ import Navbar from "../../components/Banner/Navbar/Navbar";
 import BookNow from "../../components/BookNow/BookNow";
 import CallAgent from "../../components/CallAgent/CallAgent";
 import CallNowBottom from "../../components/CallNowBottom/CallNowBottom";
+import FirstChoice from "../../components/FirstChoice/FirstChoice";
 import Footer from "../../components/Footer/Footer";
 import NumbersSpeak from "../../components/NumbersSpeak/NumbersSpeak";
 import TaxiFares from "../../components/TaxiFares/TaxiFares";
@@ -16,6 +17,7 @@ const Home = () => {
       <Navbar></Navbar>
       <Banner></Banner>
       <BookNow></BookNow>
+      <FirstChoice></FirstChoice>
       <NumbersSpeak></NumbersSpeak>
       <CallAgent></CallAgent>
       <WhyChooseUs></WhyChooseUs>
