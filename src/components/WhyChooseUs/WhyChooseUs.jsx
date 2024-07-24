@@ -4,7 +4,7 @@ import safetyGuarantee from "../../assets/images/Safety-Guarantee.png";
 
 const WhyChooseUs = () => {
   return (
-    <div className="pt-[6.5625rem] pb-[9.25rem] bg-dark">
+    <div className="bg-zigzag-animation relative pt-[6.5625rem] pb-[9.25rem] bg-dark">
       <div className="max-w-[1440px] w-10/12 mx-auto text-center">
         <div className="mb-[3.75rem]">
           <span className="inline-block size-2 rounded-full bg-primary-color mt-1"></span>

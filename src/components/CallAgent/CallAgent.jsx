@@ -1,6 +1,6 @@
 const CallAgent = () => {
   return (
-    <div className="pt-[7.5rem] pb-[9.875rem] bg-primary-color">
+    <div className="bg-zigzag-animation relative pt-[7.5rem] pb-[9.875rem] bg-primary-color">
       <div className="flex gap-6 flex-col md:flex-row justify-between md:items-center max-w-[1440px] w-10/12 mx-auto">
         <div className="text-dark">
           <p className="font-bold leading-[1rem] ">Make a call or fill form</p>

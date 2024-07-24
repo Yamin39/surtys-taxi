@@ -5,7 +5,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white">
+    <footer className="bg-zigzag-animation relative bg-dark text-white">
       <div className="max-w-[1440px] w-10/12 mx-auto">
         <div className="flex flex-wrap md:flex-nowrap gap-10 justify-between pt-[10rem] pb-[6.875rem]">
           {/* About */}

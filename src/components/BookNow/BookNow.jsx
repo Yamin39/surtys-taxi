@@ -3,13 +3,15 @@ import { MdDateRange } from "react-icons/md";
 
 const BookNow = () => {
   return (
-    <section className="pt-[7.5rem] pb-[7.375rem] bg-dark text-white">
+    <section className="bg-zigzag-animation relative pt-[7.5rem] pb-[7.375rem] bg-dark text-white">
       <div className="flex flex-col md:flex-row gap-8 max-w-[1440px] w-10/12 mx-auto">
         <div className="md:max-w-[29%]">
           <span className="inline-block size-2 rounded-full bg-primary-color mt-1"></span>
           <p className="font-semibold leading-[2.125rem]">Looking for taxi?</p>
           <h1 className="text-[3.75rem] tracking-[-0.04rem] leading-[4.5rem] font-bold">Make your booking</h1>
-          <p className="font-medium mt-5 md:mt-[2.25rem] leading-[2.125rem] text-[#B5B5B5]">Our taxis commit to make your trips unique by best answering your needs.</p>
+          <p className="font-medium mt-5 md:mt-[2.25rem] leading-[2.125rem] text-[#B5B5B5]">
+            Our taxis commit to make your trips unique by best answering your needs.
+          </p>
         </div>
         <form className="flex-1 grid gap-5 grid-cols-1 sm:grid-cols-2">
           {/* name */}

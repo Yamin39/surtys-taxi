@@ -25,3 +25,59 @@ html {
     display: none;
   }
 }
+
+.bg-zigzag-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 38px;
+  background: #000;
+  background-repeat: repeat-x;
+  background-image: url("./assets/images/zigzag-box.png");
+  bottom: 0;
+  -webkit-animation: bgSlide 20s linear infinite;
+  animation: bgSlide 20s linear infinite;
+}
+
+@-webkit-keyframes bgSlide {
+  0% {
+    background-position: 0 0;
+  }
+  20% {
+    background-position: -100px 0;
+  }
+  40% {
+    background-position: -200px 0;
+  }
+  60% {
+    background-position: -150px 0;
+  }
+  80% {
+    background-position: -100px 0;
+  }
+  100% {
+    background-position: 0px 0;
+  }
+}
+
+@keyframes bgSlide {
+  0% {
+    background-position: 0 0;
+  }
+  20% {
+    background-position: -100px 0;
+  }
+  40% {
+    background-position: -200px 0;
+  }
+  60% {
+    background-position: -150px 0;
+  }
+  80% {
+    background-position: -100px 0;
+  }
+  100% {
+    background-position: 0px 0;
+  }
+}

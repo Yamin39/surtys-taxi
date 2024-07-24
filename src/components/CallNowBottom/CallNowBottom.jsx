@@ -1,6 +1,6 @@
 const CallNowBottom = () => {
   return (
-    <div className="py-[7.5rem] bg-primary-color">
+    <div className="bg-zigzag-animation relative py-[7.5rem] bg-primary-color">
       <div className="text-dark max-w-[1440px] w-10/12 mx-auto text-center">
         <p className="font-semibold leading-[1rem]">Call 24 hour service available</p>
         <h1 className="w-full max-w-[42.5rem] inline-block mt-[0.9375rem] mb-[3.75rem] text-[3.75rem] font-bold tracking-[-0.15rem] leading-[4.5rem]">
