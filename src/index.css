@@ -26,6 +26,7 @@ html {
   }
 }
 
+/* bg zigzag animation styles */
 .bg-zigzag-animation:after {
   content: "";
   position: absolute;
@@ -80,4 +81,81 @@ html {
   100% {
     background-position: 0px 0;
   }
+}
+
+/* scroll-to-top */
+
+.scroll-to-top {
+  display: inline-block;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  background: #ffc000;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  z-index: 99;
+  text-align: center;
+  transition: all 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.scroll-to-top:after,
+.scroll-to-top:before {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border-radius: 50%;
+  background-color: #ffc000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+  content: "";
+  position: absolute;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+  -webkit-animation: ripple 3s infinite;
+  animation: ripple 3s infinite;
+  transition: all 0.4s ease;
+}
+.scroll-to-top:after {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+@-webkit-keyframes ripple {
+  70% {
+    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+@keyframes ripple {
+  70% {
+    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+.scroll-to-top .scroll-to-top-icon {
+  font-size: 1.125rem;
+  line-height: 2.8125rem;
+  color: #111111;
+  position: relative;
+  z-index: 10;
+  transition: all 0.5s;
+}
+.scroll-to-top:hover {
+  background: #111111;
+}
+.scroll-to-top:hover:before,
+.scroll-to-top:hover:after {
+  background-color: #111111;
+}
+.scroll-to-top:hover .scroll-to-top-icon {
+  color: #ffc000;
 }

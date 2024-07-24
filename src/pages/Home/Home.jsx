@@ -1,3 +1,4 @@
+import { FaAngleUp } from "react-icons/fa6";
 import Banner from "../../components/Banner/Banner";
 import Navbar from "../../components/Banner/Navbar/Navbar";
 import BookNow from "../../components/BookNow/BookNow";
@@ -10,7 +11,7 @@ import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
 const Home = () => {
   return (
-    <div>
+    <div id="home">
       <div className="bg-dark h-[12.9rem] sm:hidden"></div>
       <Navbar></Navbar>
       <Banner></Banner>
@@ -21,6 +22,10 @@ const Home = () => {
       <TaxiFares></TaxiFares>
       <CallNowBottom></CallNowBottom>
       <Footer></Footer>
+
+      <button className="scroll-to-top" onClick={() => document.getElementById("home").scrollIntoView()}>
+        <FaAngleUp className="scroll-to-top-icon"></FaAngleUp>
+      </button>
     </div>
   );
 };
