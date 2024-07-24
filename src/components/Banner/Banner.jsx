@@ -18,7 +18,7 @@ const Banner = () => {
         perView: 1,
         spacing: 0,
       },
-      vertical: true,
+      vertical: window.innerWidth > 768 ? true : false,
       initial: 0,
       slideChanged(slider) {
         setCurrentSlide(slider.track.details.rel);
