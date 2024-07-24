@@ -1,13 +1,32 @@
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { FaFacebookF, FaGooglePlusG, FaTwitter, FaUserCircle, FaYoutube } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { TbPhoneCall } from "react-icons/tb";
 import logo from "../../../assets/images/logo.png";
 import NavDrawer from "./NavDrawer/NavDrawer";
+import NavDrawerFixed from "./NavDrawer/NavDrawerFixed";
+import NavLinks from "./NavLinks";
 
 const Navbar = () => {
+  const [navbar, setNavbar] = useState(false);
+  const changeNavbar = () => {
+    if (window.scrollY >= 100) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavbar);
+    return () => {
+      window.removeEventListener("scroll", changeNavbar);
+    };
+  }, []);
+
   return (
     <header>
-      <nav className="absolute top-0 z-50 max-w-[1440px] w-10/12 left-0 right-0 mx-auto">
+      <nav className={`absolute top-0 z-50 max-w-[1440px] w-10/12 left-0 right-0 mx-auto ${navbar && "hidden"}`}>
         <div className="text-white grid md:grid-cols-3 gap-6  px-4 py-9">
           <ul className="flex justify-center md:justify-start items-center gap-4">
             <li>
@@ -56,9 +75,10 @@ const Navbar = () => {
 
         <div className="bg-primary-color text-dark rounded-[2.9688rem] flex items-center justify-between">
           <div className="flex-grow sm:py-4 md:py-7 px-7 md:px-14">
-            <NavDrawer className="md:hidden"></NavDrawer>
+            <NavDrawer></NavDrawer>
             <ul className="hidden md:flex items-center justify-between text-sm font-medium tracking-[0.2rem]">
-              <li>
+              <NavLinks></NavLinks>
+              {/* <li>
                 <a className="font-bold" href="#">
                   HOME
                 </a>
@@ -77,7 +97,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a href="#">CONTACT</a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -93,12 +113,31 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* <nav className="fixed w-full top-0 z-50 bg-primary-color text-dark ">
+      <motion.nav
+        className={`fixed w-full top-0 z-50 bg-primary-color text-dark ${!navbar && "hidden"}`}
+        variants={{
+          initial: {
+            opacity: 0,
+            y: -100,
+          },
+          animate: {
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 0.5,
+            },
+          },
+        }}
+        initial="initial"
+        animate="animate"
+        key={navbar}
+      >
         <div className="max-w-[1440px] w-10/12 mx-auto flex items-center justify-between">
           <div className="flex-grow sm:py-4 md:py-7 px-7 md:px-14">
-            <NavDrawer className="md:hidden"></NavDrawer>
+            <NavDrawerFixed></NavDrawerFixed>
             <ul className="hidden md:flex items-center justify-between text-sm font-medium tracking-[0.2rem]">
-              <li>
+              <NavLinks></NavLinks>
+              {/* <li>
                 <a className="font-bold" href="#">
                   HOME
                 </a>
@@ -117,7 +156,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a href="#">CONTACT</a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -132,8 +171,8 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div id="nav-right-overlay" className="absolute top-0 h-[6.2rem] w-[20%] bg-dark ml-auto right-0"></div>
-      </nav> */}
+        <div id="nav-right-overlay" className="absolute top-0 h-[4rem] sm:h-[6.15rem] md:h-[6.2rem] w-[20%] bg-dark ml-auto right-0"></div>
+      </motion.nav>
     </header>
   );
 };

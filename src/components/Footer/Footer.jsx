@@ -112,8 +112,8 @@ const Footer = () => {
             </div>
             <p className="text-[#B5B5B5] text-sm leading-[1.875rem] font-semibold">
               © {new Date().getFullYear()}{" "}
-              <a href="https://mhyamin.me/" className="text-primary-color">
-                mhyamin.me
+              <a href="https://www.surtys.co.uk/" className="text-primary-color">
+                surtys.co.uk
               </a>
             </p>
           </div>
