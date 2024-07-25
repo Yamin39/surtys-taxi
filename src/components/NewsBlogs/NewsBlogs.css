@@ -1,0 +1,101 @@
+.blog-container .image-block .inner-block {
+  position: absolute;
+  background-color: #111111;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  border-radius: 0.625rem;
+  opacity: 0;
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.blog-container .image-block .inner-block > a {
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  position: relative;
+  z-index: 50;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc000;
+  border-radius: 50%;
+  /* opacity: 0; */
+  transition: all 0.4s ease;
+}
+
+.blog-container .image-block .inner-block a .link-icon {
+  color: black;
+}
+
+.blog-container .image-block .inner-block a:hover {
+  background-color: white;
+}
+
+.blog-container .image-block:hover .inner-block {
+    height: 100%;
+    opacity: 0.6;
+}
+
+.blog-container .image-block:hover .blog-image {
+    transform: scale(1.1);
+}
+
+/* .blog-container .image-block .inner-block {
+  overflow: hidden;
+  position: relative;
+}
+.blog-container .image-block .inner-block > a {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+  -webkit-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+  text-align: center;
+  line-height: 50px;
+  color: #111111;
+  background-color: #ffc000;
+  border-radius: 50%;
+  opacity: 0;
+  font-size: 16px;
+  transition: all 0.4s ease;
+}
+.blog-container .image-block .inner-block > a:hover {
+  background-color: #fff;
+  color: #111111;
+}
+.blog-container .image-block .inner-block > img {
+  width: 100%;
+  transition: all 0.4s ease;
+}
+.blog-container .image-block .inner-block:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #111111;
+  opacity: 0.85;
+  transition: all 0.4s ease;
+  z-index: 10;
+}
+.blog-container .image-block:hover .inner-block:before {
+  height: 100%;
+}
+.blog-container .image-block:hover .inner-block > img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.blog-container .image-block:hover .inner-block > a {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} */

@@ -8,6 +8,7 @@ import CallNowBottom from "../../components/CallNowBottom/CallNowBottom";
 import ChooseTaxi from "../../components/ChooseTaxi/ChooseTaxi";
 import FirstChoice from "../../components/FirstChoice/FirstChoice";
 import Footer from "../../components/Footer/Footer";
+import NewsBlogs from "../../components/NewsBlogs/NewsBlogs";
 import NumbersSpeak from "../../components/NumbersSpeak/NumbersSpeak";
 import TaxiFares from "../../components/TaxiFares/TaxiFares";
 import Testimonials from "../../components/Testimonials/Testimonials";
@@ -28,6 +29,7 @@ const Home = () => {
       <WhyChooseUs></WhyChooseUs>
       <TaxiFares></TaxiFares>
       <Testimonials></Testimonials>
+      <NewsBlogs></NewsBlogs>
       <CallNowBottom></CallNowBottom>
       <Footer></Footer>
 
