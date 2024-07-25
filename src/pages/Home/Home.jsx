@@ -10,6 +10,7 @@ import FirstChoice from "../../components/FirstChoice/FirstChoice";
 import Footer from "../../components/Footer/Footer";
 import NumbersSpeak from "../../components/NumbersSpeak/NumbersSpeak";
 import TaxiFares from "../../components/TaxiFares/TaxiFares";
+import Testimonials from "../../components/Testimonials/Testimonials";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
       <BrandSlider></BrandSlider>
       <WhyChooseUs></WhyChooseUs>
       <TaxiFares></TaxiFares>
+      <Testimonials></Testimonials>
       <CallNowBottom></CallNowBottom>
       <Footer></Footer>
 
