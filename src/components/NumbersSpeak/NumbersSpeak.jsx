@@ -1,8 +1,9 @@
+import CountUp from "react-countup";
 import happy from "../../assets/images/happy.png";
 import meter from "../../assets/images/meter.png";
 import people from "../../assets/images/people.png";
 import taxi from "../../assets/images/taxi.png";
-import "./NumbersSpeak.css"
+import "./NumbersSpeak.css";
 
 const NumbersSpeak = () => {
   return (
@@ -20,7 +21,9 @@ const NumbersSpeak = () => {
             <div className="max-w-[3.75rem] max-h-[3.75rem] mx-auto">
               <img src={meter} className="size-full" alt="Meter icon" />
             </div>
-            <h1 className="text-dark text-[3.75rem] font-bold tracking-[-0.15rem]">8700</h1>
+            <h1 className="text-dark text-[3.75rem] font-bold tracking-[-0.15rem]">
+              <CountUp end={8700} duration={4} separator="" enableScrollSpy scrollSpyOnce></CountUp>
+            </h1>
             <p className="font-medium text-[#717171]">KM Driven</p>
           </div>
 
@@ -29,7 +32,9 @@ const NumbersSpeak = () => {
             <div className="max-w-[3.75rem] max-h-[3.75rem] mx-auto">
               <img src={people} className="size-full" alt="people icon" />
             </div>
-            <h1 className="text-dark text-[3.75rem] font-bold tracking-[-0.15rem]">4978</h1>
+            <h1 className="text-dark text-[3.75rem] font-bold tracking-[-0.15rem]">
+              <CountUp end={4978} duration={4} separator="" enableScrollSpy scrollSpyOnce></CountUp>
+            </h1>
             <p className="font-medium text-[#717171]">People Dropped</p>
           </div>
 
@@ -38,7 +43,9 @@ const NumbersSpeak = () => {
             <div className="max-w-[3.75rem] max-h-[3.75rem] mx-auto">
               <img src={taxi} className="size-full" alt="taxi icon" />
             </div>
-            <h1 className="text-dark text-[3.75rem] font-bold tracking-[-0.15rem]">800</h1>
+            <h1 className="text-dark text-[3.75rem] font-bold tracking-[-0.15rem]">
+              <CountUp end={800} duration={4} separator="" enableScrollSpy scrollSpyOnce></CountUp>
+            </h1>
             <p className="font-medium text-[#717171]">Taxis & Drivers</p>
           </div>
 
@@ -47,7 +54,9 @@ const NumbersSpeak = () => {
             <div className="max-w-[3.75rem] max-h-[3.75rem] mx-auto">
               <img src={happy} className="size-full" alt="happy icon" />
             </div>
-            <h1 className="text-dark text-[3.75rem] font-bold tracking-[-0.15rem]">2480</h1>
+            <h1 className="text-dark text-[3.75rem] font-bold tracking-[-0.15rem]">
+              <CountUp end={2480} duration={4} separator="" enableScrollSpy scrollSpyOnce></CountUp>
+            </h1>
             <p className="font-medium text-[#717171]">Happy People</p>
           </div>
         </div>
