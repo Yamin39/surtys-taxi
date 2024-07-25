@@ -4,6 +4,7 @@ import Navbar from "../../components/Banner/Navbar/Navbar";
 import BookNow from "../../components/BookNow/BookNow";
 import CallAgent from "../../components/CallAgent/CallAgent";
 import CallNowBottom from "../../components/CallNowBottom/CallNowBottom";
+import ChooseTaxi from "../../components/ChooseTaxi/ChooseTaxi";
 import FirstChoice from "../../components/FirstChoice/FirstChoice";
 import Footer from "../../components/Footer/Footer";
 import NumbersSpeak from "../../components/NumbersSpeak/NumbersSpeak";
@@ -20,6 +21,7 @@ const Home = () => {
       <FirstChoice></FirstChoice>
       <NumbersSpeak></NumbersSpeak>
       <CallAgent></CallAgent>
+      <ChooseTaxi></ChooseTaxi>
       <WhyChooseUs></WhyChooseUs>
       <TaxiFares></TaxiFares>
       <CallNowBottom></CallNowBottom>

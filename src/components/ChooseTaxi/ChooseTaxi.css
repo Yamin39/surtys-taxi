@@ -1,0 +1,45 @@
+.taxi-card:before,
+.taxi-card:after {
+  content: "";
+  position: absolute;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  top: -0.125rem;
+  left: -0.125rem;
+  right: -0.125rem;
+  bottom: -0.125rem;
+  transition: all 0.4s ease;
+  border-radius: 0.625rem;
+}
+.taxi-card:before {
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+  border-top: 0.125rem solid #ffc000;
+  border-bottom: 0.125rem solid #ffc000;
+}
+.taxi-card:after {
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+  border-left: 0.125rem solid #ffc000;
+  border-right: 0.125rem solid #ffc000;
+}
+
+.taxi-card:hover:before {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.taxi-card:hover:after {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.taxi-card:hover .taxi-card-btn {
+  background-color: #ffc000;
+  color: #111111;
+}
