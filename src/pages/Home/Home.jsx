@@ -2,6 +2,7 @@ import { FaAngleUp } from "react-icons/fa6";
 import Banner from "../../components/Banner/Banner";
 import Navbar from "../../components/Banner/Navbar/Navbar";
 import BookNow from "../../components/BookNow/BookNow";
+import BrandSlider from "../../components/BrandSlider/BrandSlider";
 import CallAgent from "../../components/CallAgent/CallAgent";
 import CallNowBottom from "../../components/CallNowBottom/CallNowBottom";
 import ChooseTaxi from "../../components/ChooseTaxi/ChooseTaxi";
@@ -22,6 +23,7 @@ const Home = () => {
       <NumbersSpeak></NumbersSpeak>
       <CallAgent></CallAgent>
       <ChooseTaxi></ChooseTaxi>
+      <BrandSlider></BrandSlider>
       <WhyChooseUs></WhyChooseUs>
       <TaxiFares></TaxiFares>
       <CallNowBottom></CallNowBottom>
