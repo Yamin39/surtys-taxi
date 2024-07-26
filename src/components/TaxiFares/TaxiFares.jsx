@@ -25,15 +25,15 @@ const TaxiFares = () => {
             <ul className="mt-10 mb-[1.875rem] pt-[1.875rem] border-t-[0.1rem] border-t-[#1111111a] leading-[2.125rem] text-dark font-medium">
               <li className="flex justify-between gap-2">
                 <span>Initial charge:</span>
-                <strong>$2.50</strong>
+                <strong>£2.50</strong>
               </li>
               <li className="flex justify-between gap-2">
                 <span>Additional Kilometre:</span>
-                <strong>$0.50</strong>
+                <strong>£0.50</strong>
               </li>
               <li className="flex justify-between gap-2">
                 <span>Per 2 minutes in stopped traffic:</span>
-                <strong>$0.66</strong>
+                <strong>£0.66</strong>
               </li>
             </ul>
 
@@ -64,15 +64,15 @@ const TaxiFares = () => {
             <ul className="mt-10 mb-[1.875rem] pt-[1.875rem] border-t-[0.1rem] border-t-[#1111111a] leading-[2.125rem] text-dark font-medium">
               <li className="flex justify-between gap-2">
                 <span>One hour of waiting:</span>
-                <strong>$8.00</strong>
+                <strong>£8.00</strong>
               </li>
               <li className="flex justify-between gap-2">
                 <span>4pm to 8pm weekday surcharge:</span>
-                <strong>$2.00</strong>
+                <strong>£2.00</strong>
               </li>
               <li className="flex justify-between gap-2">
                 <span>8pm to 6am night surcharge:</span>
-                <strong>$3.00</strong>
+                <strong>£3.00</strong>
               </li>
             </ul>
 

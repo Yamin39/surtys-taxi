@@ -72,26 +72,6 @@ const Navbar = () => {
             <NavDrawer></NavDrawer>
             <ul className="hidden gap-16 md:flex items-center text-sm font-medium tracking-[0.2rem]">
               <NavLinks></NavLinks>
-              {/* <li>
-                <a className="font-bold" href="#">
-                  HOME
-                </a>
-              </li>
-              <li>
-                <a href="#">ABOUT</a>
-              </li>
-              <li>
-                <a href="#">PAGES</a>
-              </li>
-              <li>
-                <a href="#">BOOK A RIDE</a>
-              </li>
-              <li>
-                <a href="#">BLOG</a>
-              </li>
-              <li>
-                <a href="#">CONTACT</a>
-              </li> */}
             </ul>
           </div>
 
@@ -131,26 +111,6 @@ const Navbar = () => {
             <NavDrawerFixed></NavDrawerFixed>
             <ul className="hidden gap-16 md:flex items-center text-sm font-medium tracking-[0.2rem]">
               <NavLinks></NavLinks>
-              {/* <li>
-                <a className="font-bold" href="#">
-                  HOME
-                </a>
-              </li>
-              <li>
-                <a href="#">ABOUT</a>
-              </li>
-              <li>
-                <a href="#">PAGES</a>
-              </li>
-              <li>
-                <a href="#">BOOK A RIDE</a>
-              </li>
-              <li>
-                <a href="#">BLOG</a>
-              </li>
-              <li>
-                <a href="#">CONTACT</a>
-              </li> */}
             </ul>
           </div>
 

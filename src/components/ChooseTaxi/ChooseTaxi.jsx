@@ -122,10 +122,10 @@ const ChooseTaxi = () => {
                 <h3 className="mb-[0.9375rem] text-dark text-xl font-bold text-center leading-6">{taxi?.model}</h3>
                 <ul className="text-secondary-color leading-[2.125rem] ">
                   <li className="flex gap-4 justify-between items-center">
-                    <span>Base Rate:</span> <span className="font-semibold">${taxi?.baseRate}</span>
+                    <span>Base Rate:</span> <span className="font-semibold">£{taxi?.baseRate}</span>
                   </li>
                   <li className="flex gap-4 justify-between items-center">
-                    <span>Per Mile/KM:</span> <span className="font-semibold">${taxi?.PerMileOrKM}</span>
+                    <span>Per Mile/KM:</span> <span className="font-semibold">£{taxi?.PerMileOrKM}</span>
                   </li>
                   <li className="flex gap-4 justify-between items-center">
                     <span>Passengers:</span> <span className="font-semibold">{taxi?.passengers}</span>
