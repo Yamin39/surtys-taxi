@@ -1,4 +1,5 @@
 import { FaAngleUp } from "react-icons/fa6";
+import AboutUs from "../../components/AboutUs/AboutUs";
 import Banner from "../../components/Banner/Banner";
 import Navbar from "../../components/Banner/Navbar/Navbar";
 import BookNow from "../../components/BookNow/BookNow";
@@ -8,11 +9,11 @@ import ChooseTaxi from "../../components/ChooseTaxi/ChooseTaxi";
 import Contact from "../../components/Contact/Contact";
 import FirstChoice from "../../components/FirstChoice/FirstChoice";
 import Footer from "../../components/Footer/Footer";
+import Map from "../../components/Map/Map";
 import NewsBlogs from "../../components/NewsBlogs/NewsBlogs";
 import TaxiFares from "../../components/TaxiFares/TaxiFares";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
-import Map from "../../components/Map/Map";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       <ChooseTaxi></ChooseTaxi>
       <WhyChooseUs></WhyChooseUs>
       <TaxiFares></TaxiFares>
+      <AboutUs></AboutUs>
       <Testimonials></Testimonials>
       <NewsBlogs></NewsBlogs>
       <CallNowBottom></CallNowBottom>

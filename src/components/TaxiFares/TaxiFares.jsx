@@ -2,7 +2,7 @@ import taxiBlack from "../../assets/images/taxi-black.png";
 
 const TaxiFares = () => {
   return (
-    <div className="pt-[6.5625rem] pb-[6.875rem]">
+    <div className="pt-[6.5625rem]">
       <div className="max-w-[1440px] w-10/12 mx-auto">
         <div className="mb-[3.75rem] text-center">
           <span className="inline-block size-2 rounded-full bg-primary-color mt-1"></span>
