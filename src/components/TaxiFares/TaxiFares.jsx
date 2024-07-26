@@ -18,7 +18,7 @@ const TaxiFares = () => {
               </div>
               <div>
                 <h3 className="text-dark text-[1.875rem] font-bold tracking-[-0.075rem] leading-[2.25rem]">All taxi fares</h3>
-                <p className="font-medium leading-[1.625rem] mt-1">Lorem ipsum dolor sit amet cons adipisci elit.</p>
+                <p className="font-medium leading-[1.625rem] mt-1">View Complete Taxi Fare Information.</p>
               </div>
             </div>
 
@@ -57,7 +57,7 @@ const TaxiFares = () => {
               </div>
               <div>
                 <h3 className="text-dark text-[1.875rem] font-bold tracking-[-0.075rem] leading-[2.25rem]">Additional fares</h3>
-                <p className="font-medium leading-[1.625rem] mt-1">Lorem ipsum dolor sit amet cons adipisci elit.</p>
+                <p className="font-medium leading-[1.625rem] mt-1">Extra Charges and Additional Fees.</p>
               </div>
             </div>
 
@@ -91,8 +91,8 @@ const TaxiFares = () => {
         </div>
 
         <p className="w-full max-w-[43.75rem] mx-auto text-center text-[#717171] leading-[2.125rem]">
-          There are many variations of passages of lorem ipsum available but the majority have suffered alteration in some form by injected humour or random
-          words which.
+          Surty’s Private Hire is located in Gloucester but are happy to travel wherever you want to go. For a quote, journey plan or to discuss sightseeing
+          trips or events, simply call or email and we will be delighted to help.
         </p>
       </div>
     </div>

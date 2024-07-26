@@ -37,7 +37,7 @@ const NewsBlogs = () => {
             <h2 className="text-[1.875rem] font-bold tracking-[-0.075rem] leading-[2.25rem]">Best Mini Bus & Taxi Company 2023 Gloucestershire</h2>
 
             <p className="text-secondary-color leading-[2.125rem] mt-5">
-              We have achieved the Best Mini Bus & Taxi Company 2023 Gloucestershire Certificate on December, 2023
+              We achieved the Best Mini Bus & Taxi Company 2023 Gloucestershire Certificate in December 2023.
             </p>
           </div>
 
