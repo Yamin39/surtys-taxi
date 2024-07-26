@@ -12,6 +12,7 @@ import NewsBlogs from "../../components/NewsBlogs/NewsBlogs";
 import TaxiFares from "../../components/TaxiFares/TaxiFares";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
+import Map from "../../components/Map/Map";
 
 const Home = () => {
   return (
@@ -29,6 +30,7 @@ const Home = () => {
       <NewsBlogs></NewsBlogs>
       <CallNowBottom></CallNowBottom>
       <Contact></Contact>
+      <Map></Map>
       <Footer></Footer>
 
       <button className="scroll-to-top" onClick={() => document.getElementById("home")?.scrollIntoView()}>
