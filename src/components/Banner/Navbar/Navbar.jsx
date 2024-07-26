@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <header>
       <nav className={`absolute top-0 z-50 max-w-[1440px] w-10/12 left-0 right-0 mx-auto ${navbar && "hidden"}`}>
-        <div className="text-white grid md:grid-cols-3 gap-6  px-4 py-9">
+        <div className="text-white grid md:grid-cols-3 gap-6 px-4 py-7">
           <ul className="flex justify-center md:justify-start items-center gap-4">
             <li>
               <a href="mailto:ish@surtysprivatehire.co.uk" className="flex items-center gap-2">
@@ -38,7 +38,7 @@ const Navbar = () => {
           </ul>
 
           <div className="flex justify-center">
-            <img className="max-w-[10.125rem]" src={logo} alt="logo" />
+            <img className="max-h-[3.9rem] md:max-h-[5rem]" src={logo} alt="logo" />
           </div>
 
           <div className="flex justify-center md:justify-end items-center">

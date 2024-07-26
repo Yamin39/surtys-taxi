@@ -107,8 +107,8 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row gap-6 justify-between pt-12 border-t-[0.0625rem] border-t-[#ffffff1a] pb-[5.375rem]">
           <div className="flex gap-5 items-center">
-            <div className="w-full max-w-[10.125rem]">
-              <img className="w-full" src={logo} alt="logo" />
+            <div>
+              <img className="max-h-[3.9rem] md:max-h-[5rem]" src={logo} alt="logo" />
             </div>
             <p className="text-[#B5B5B5] text-sm leading-[1.875rem] font-semibold">
               © {new Date().getFullYear()}{" "}
