@@ -2,18 +2,45 @@ const NavLinks = () => {
   return (
     <>
       <li>
-        <a className="font-bold" href="#">
+        <a
+          onClick={() => {
+            document.getElementById("home")?.scrollIntoView();
+          }}
+          className="font-bold cursor-pointer"
+        >
           HOME
         </a>
       </li>
       <li>
-        <a href="#">ABOUT</a>
+        <a
+          onClick={() => {
+            document.getElementById("about")?.scrollIntoView();
+          }}
+          className="cursor-pointer"
+        >
+          ABOUT
+        </a>
       </li>
       <li>
-        <a href="#">BOOK A RIDE</a>
+        <a
+          onClick={() => {
+            document.getElementById("name-input").focus();
+            document.getElementById("book-now")?.scrollIntoView();
+          }}
+          className="cursor-pointer"
+        >
+          BOOK A RIDE
+        </a>
       </li>
       <li>
-        <a href="#">CONTACT</a>
+        <a
+          onClick={() => {
+            document.getElementById("contact")?.scrollIntoView();
+          }}
+          className="cursor-pointer"
+        >
+          CONTACT
+        </a>
       </li>
     </>
   );

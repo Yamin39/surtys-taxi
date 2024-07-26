@@ -48,19 +48,55 @@ const Footer = () => {
 
             <ul id="footer-link-ul" className="space-y-2 text-[#B5B5B5] text-sm leading-[1.875rem] font-semibold -ml-4">
               <li>
-                <a href="#">About</a>
+                <a
+                  onClick={() => {
+                    document.getElementById("about")?.scrollIntoView();
+                  }}
+                  className="cursor-pointer"
+                >
+                  About
+                </a>
               </li>
               <li>
-                <a href="#">Get a Taxi</a>
+                <a
+                  onClick={() => {
+                    document.getElementById("name-input").focus();
+                    document.getElementById("book-now")?.scrollIntoView();
+                  }}
+                  className="cursor-pointer"
+                >
+                  Get a Taxi
+                </a>
               </li>
               <li>
-                <a href="#">Our Reviews</a>
+                <a
+                  onClick={() => {
+                    document.getElementById("testimonials")?.scrollIntoView();
+                  }}
+                  className="cursor-pointer"
+                >
+                  Our Reviews
+                </a>
               </li>
               <li>
-                <a href="#">Latest News</a>
+                <a
+                  onClick={() => {
+                    document.getElementById("awards")?.scrollIntoView();
+                  }}
+                  className="cursor-pointer"
+                >
+                  Our achievements
+                </a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a
+                  onClick={() => {
+                    document.getElementById("contact")?.scrollIntoView();
+                  }}
+                  className="cursor-pointer"
+                >
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
@@ -105,7 +141,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-6 justify-between pt-12 border-t-[0.0625rem] border-t-[#ffffff1a] pb-[5.375rem]">
+        <div className="flex gap-6 sm:justify-center pt-12 border-t-[0.0625rem] border-t-[#ffffff1a] pb-[5.375rem]">
           <div className="flex gap-5 items-center">
             <div>
               <img className="max-h-[3.9rem] md:max-h-[5rem]" src={logo} alt="logo" />
@@ -117,19 +153,6 @@ const Footer = () => {
               </a>
             </p>
           </div>
-
-          <ul className="flex items-center gap-6 text-sm text-[#B5B5B5]">
-            <li>
-              <a href="#" className="duration-300 hover:text-primary-color">
-                Terms of Use
-              </a>
-            </li>
-            <li>
-              <a href="#" className="duration-300 hover:text-primary-color">
-                Privacy Policy
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </footer>

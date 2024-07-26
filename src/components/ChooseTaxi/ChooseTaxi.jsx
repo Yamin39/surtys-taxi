@@ -134,7 +134,7 @@ const ChooseTaxi = () => {
                 <button
                   onClick={() => {
                     document.getElementById("name-input").focus();
-                    document.getElementById("book-now").scrollIntoView();
+                    document.getElementById("book-now")?.scrollIntoView();
                   }}
                   className="taxi-card-btn relative z-10 w-full p-3 px-10 mt-[1.875rem] rounded-[1.8125rem] bg-[#F3F3F3] text-secondary-color font-semibold leading-[2.125rem] duration-300 active:scale-90"
                 >

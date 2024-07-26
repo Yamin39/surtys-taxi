@@ -117,7 +117,7 @@ const Testimonials = () => {
     ]
   );
   return (
-    <div className="testimonials-container pt-[6.5625rem] pb-[7.1875rem] bg-dark">
+    <div id="testimonials" className="testimonials-container pt-[6.5625rem] pb-[7.1875rem] bg-dark">
       <div className="text-center text-white relative">
         <div className="mb-[3.75rem]">
           <span className="inline-block size-2 rounded-full bg-primary-color mt-1"></span>

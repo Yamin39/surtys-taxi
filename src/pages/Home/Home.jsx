@@ -29,7 +29,7 @@ const Home = () => {
       <CallNowBottom></CallNowBottom>
       <Footer></Footer>
 
-      <button className="scroll-to-top" onClick={() => document.getElementById("home").scrollIntoView()}>
+      <button className="scroll-to-top" onClick={() => document.getElementById("home")?.scrollIntoView()}>
         <FaAngleUp className="scroll-to-top-icon"></FaAngleUp>
       </button>
     </div>

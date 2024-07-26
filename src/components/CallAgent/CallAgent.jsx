@@ -10,7 +10,7 @@ const CallAgent = () => {
         <button
           onClick={() => {
             document.getElementById("name-input").focus();
-            document.getElementById("book-now").scrollIntoView();
+            document.getElementById("book-now")?.scrollIntoView();
           }}
           className="w-fit font-semibold bg-dark text-white hover:text-dark text-lg rounded-[2.4375rem] py-[1.3438rem] px-[3.6875rem] duration-[.4s] hover:bg-white active:scale-90"
         >
