@@ -5,6 +5,7 @@ import BookNow from "../../components/BookNow/BookNow";
 import CallAgent from "../../components/CallAgent/CallAgent";
 import CallNowBottom from "../../components/CallNowBottom/CallNowBottom";
 import ChooseTaxi from "../../components/ChooseTaxi/ChooseTaxi";
+import Contact from "../../components/Contact/Contact";
 import FirstChoice from "../../components/FirstChoice/FirstChoice";
 import Footer from "../../components/Footer/Footer";
 import NewsBlogs from "../../components/NewsBlogs/NewsBlogs";
@@ -27,6 +28,7 @@ const Home = () => {
       <Testimonials></Testimonials>
       <NewsBlogs></NewsBlogs>
       <CallNowBottom></CallNowBottom>
+      <Contact></Contact>
       <Footer></Footer>
 
       <button className="scroll-to-top" onClick={() => document.getElementById("home")?.scrollIntoView()}>
