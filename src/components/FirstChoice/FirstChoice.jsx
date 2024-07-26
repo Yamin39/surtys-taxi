@@ -1,8 +1,6 @@
-import { FaPlay } from "react-icons/fa";
 import callIcon from "../../assets/images/call-icon.png";
-import firstChoice1 from "../../assets/images/first-choice-img1.png";
+import firstChoice1 from "../../assets/images/first-choice-img1.jpg";
 import firstChoice2 from "../../assets/images/first-choice-img2.png";
-import "./FirstChoice.css";
 
 const FirstChoice = () => {
   return (
@@ -18,7 +16,7 @@ const FirstChoice = () => {
 
         <div className="flex flex-col md:flex-row gap-[5.625rem]">
           <div className="md:w-[45%] 2xl:w-[40%] rounded-[0.625rem]">
-            <img src={firstChoice1} alt="First Choice image 1" className="w-full rounded-[0.625rem]" />
+            <img src={firstChoice1} alt="First Choice image 1" className="w-full md:h-full object-cover rounded-[0.625rem]" />
           </div>
           <div className="flex-1 flex flex-col justify-between">
             <div className="sm:max-h-[14.875rem] flex flex-col sm:flex-row rounded-[0.625rem] mb-[3.125rem] bg-[#F3F3F3]">
@@ -31,9 +29,6 @@ const FirstChoice = () => {
                   alt="First Choice image 2"
                   className="size-full object-cover rounded-b-[0.625rem] sm:rounded-bl-none sm:rounded-e-[0.625rem] brightness-75"
                 />
-                <button className="video-popup-btn" onClick={() => document.getElementById("video-popup-modal").showModal()}>
-                  <FaPlay className="video-popup-btn-icon"></FaPlay>
-                </button>
               </div>
             </div>
 
@@ -60,28 +55,6 @@ const FirstChoice = () => {
           </div>
         </div>
       </div>
-
-      <dialog id="video-popup-modal" className="modal">
-        <div className="modal-box p-0 w-11/12 h-[60%] max-h-[25rem] max-w-5xl">
-          <iframe
-            // height={315}
-            src="https://www.youtube.com/embed/fCrXVS2Q9A8?si=VfGK_qWN7z5vsYlx"
-            title="YouTube video player"
-            frameBorder={0}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-            className="size-full"
-          />
-
-          <div className="modal-action absolute top-0 right-0 m-0">
-            <form method="dialog">
-              {/* if there is a button, it will close the modal */}
-              <button className="btn btn-error btn-sm btn-circle">X</button>
-            </form>
-          </div>
-        </div>
-      </dialog>
     </div>
   );
 };
