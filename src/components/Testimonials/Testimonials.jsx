@@ -3,10 +3,65 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { useState } from "react";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
-import reviewer from "../../assets/images/reviewer.jpg";
+import defaultReviewer from "../../assets/images/default-reviewer.png";
+import MohammedS145 from "../../assets/images/MohammedS-145.jpg";
 import "./Testimonials.css";
 
 const Testimonials = () => {
+  const reviews = [
+    {
+      id: 1,
+      img: MohammedS145,
+      review:
+        "Comeptative , kind , friendly and punctual with great communication from start to finish. A What more do you need? Highly recommended for a great all round experience. A man who takes pride in his work and makes his customers the number one priority. Highly recommended.,Excellent service with very competitive prices , very friendly too. Timekeeping is spot on with great communication, a man who takes pride in his work would highly recommend.",
+      name: "MohammedS-145",
+    },
+    {
+      id: 2,
+      img: null,
+      review: "Great all round service from booking to pick up, always on time and would definitely recommend this service.",
+      name: "WayneB-190",
+    },
+    {
+      id: 3,
+      img: null,
+      review:
+        "An excellent service, very friendly and usually dead on time. If he is going to be three or four minutes late he rings to let you know. We will continue to use him regularly.",
+      name: "DavidT-750",
+    },
+    {
+      id: 4,
+      img: null,
+      review: "Great service. Would use again.",
+      name: "OwaisB-1",
+    },
+    {
+      id: 5,
+      img: null,
+      review: "A very reliable and punctual service. will deffo be using them again.",
+      name: "KhadijaD",
+    },
+    {
+      id: 6,
+      img: null,
+      review: "Perfect time keeping, professional transportation with modern technology and we are always greeted with a friendly smile. Well recommended!",
+      name: "MohamedN-5",
+    },
+    {
+      id: 7,
+      img: null,
+      review:
+        "Great service. Very professional driver and courteous. Arrived on time and had a comfortable journey. I would recommend him to others. Fare prices.",
+      name: "BilalP-2",
+    },
+    {
+      id: 8,
+      img: null,
+      review:
+        "Great service, Ismail got our whole party to our destination on time and really helped us out. We booked very last minute and he managed to fit us in. Will definitely book with them again.",
+      name: "YanC-2",
+    },
+  ];
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
 
@@ -39,7 +94,7 @@ const Testimonials = () => {
           if (mouseOver) return;
           timeout = setTimeout(() => {
             slider.next();
-          }, 5000);
+          }, 500000);
         }
         slider.on("created", () => {
           // this is to stop autoplay when the mouse enters the slider
@@ -73,12 +128,11 @@ const Testimonials = () => {
         <div>
           <div className="navigation-wrapper">
             <div ref={sliderRef} className="keen-slider">
-              <div className="keen-slider__slide number-slide1" style={{ backgroundImage: "none" }}>
-                <TestimonialsComponent />
-              </div>
-              <div className="keen-slider__slide number-slide2" style={{ backgroundImage: "none" }}>
-                <TestimonialsComponent />
-              </div>
+              {reviews.map((review) => (
+                <div key={review?.id} className="keen-slider__slide">
+                  <TestimonialsComponent review={review} />
+                </div>
+              ))}
             </div>
             {loaded && instanceRef.current && (
               <>
@@ -105,7 +159,7 @@ function Arrow(props) {
     <button
       onClick={props.onClick}
       className={`btn-arr border-[0.125rem] text-3xl sm:text-4xl md:text-6xl border-white text-white rounded-full arrow ${
-        props.left ? "arrow--left" : "arrow--right"
+        props.left ? "arrow--left-testi" : "arrow--right-testi"
       } ${disabled}`}
     >
       {props.left && <IoIosArrowRoundBack className="btn-arr-child relative -right-2 md:-right-4" />}
@@ -114,15 +168,14 @@ function Arrow(props) {
   );
 }
 
-function TestimonialsComponent() {
+function TestimonialsComponent({ review }) {
+  const { img, review: reviewText, name } = review;
   return (
     <div className="max-w-[1440px] w-10/12 mx-auto">
       <div className="text-white text-center">
-        <img src={reviewer} alt="reviewer photo" className="size-[5rem] mx-auto object-cover rounded-full mb-[3.125rem]" />
-        <p className="md:max-w-[59.375rem] mx-auto text-[1.875rem] leading-[3.125rem] font-semibold">
-          This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch.
-        </p>
-        <p className="mt-[2.1875rem] text-primary-color text-xl font-semibold">Shana Druckman</p>
+        <img src={img ? img : defaultReviewer} alt="reviewer photo" className="size-[5rem] mx-auto object-cover rounded-full mb-[3.125rem]" />
+        <p className="md:max-w-[59.375rem] mx-auto text-[1.875rem] leading-[3.125rem] font-semibold">{reviewText}</p>
+        <p className="mt-[2.1875rem] text-primary-color text-xl font-semibold">{name}</p>
       </div>
     </div>
   );

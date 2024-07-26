@@ -10,13 +10,7 @@ const NavLinks = () => {
         <a href="#">ABOUT</a>
       </li>
       <li>
-        <a href="#">PAGES</a>
-      </li>
-      <li>
         <a href="#">BOOK A RIDE</a>
-      </li>
-      <li>
-        <a href="#">BLOG</a>
       </li>
       <li>
         <a href="#">CONTACT</a>

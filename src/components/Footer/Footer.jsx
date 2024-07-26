@@ -7,38 +7,41 @@ const Footer = () => {
   return (
     <footer className="bg-zigzag-animation relative bg-dark text-white">
       <div className="max-w-[1440px] w-10/12 mx-auto">
-        <div className="flex flex-wrap md:flex-nowrap gap-10 justify-between pt-[10rem] pb-[6.875rem]">
-          {/* About */}
-          <div className="w-full max-w-[16.875rem]">
-            <h5 className="text-lg font-semibold leading-[1.35rem] mb-8">About</h5>
-            <p className="text-[#B5B5B5] text-sm leading-[1.875rem] font-semibold">
-              There are many vari of pass of lorem ipsum availab but the majority have suffered in some form by injected humour or words
-            </p>
+        {/* About */}
+        <div className="w-full pt-[10rem] pb-16">
+          <h5 className="text-lg font-semibold leading-[1.35rem] mb-8">About</h5>
+          <p className="text-[#B5B5B5] text-sm leading-[1.875rem] font-semibold">
+            Surty’s Private Hire operates a range of vehicles offering wheelchair access, storage and reliability as well as cleanliness and safety. We are
+            relied on by regular clients for both business and pleasure. Our reputation is built on being professional and knowing what our clients need. All
+            our experienced staff are of the highest standard and plan your journey to ensure you meet your obligations – reliability comes as standard at
+            Surty’s Private Hire.
+          </p>
 
-            <ul className="flex gap-6 items-center mt-7">
-              <li>
-                <a href="#" className="duration-300 hover:text-primary-color">
-                  <FaTwitter className="text-lg" />
-                </a>
-              </li>
-              <li>
-                <a href="#" className="duration-300 hover:text-primary-color">
-                  <FaFacebookF className="text-base" />
-                </a>
-              </li>
-              <li>
-                <a href="#" className="duration-300 hover:text-primary-color">
-                  <FaYoutube className="text-lg" />
-                </a>
-              </li>
-              <li>
-                <a href="#" className="duration-300 hover:text-primary-color">
-                  <FaGooglePlusG className="text-2xl" />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul className="flex gap-6 items-center mt-7">
+            <li>
+              <a href="http://www.twitter.com/crisis786" className="duration-300 hover:text-primary-color">
+                <FaTwitter className="text-lg" />
+              </a>
+            </li>
+            <li>
+              <a href="#" className="duration-300 hover:text-primary-color">
+                <FaFacebookF className="text-base" />
+              </a>
+            </li>
+            <li>
+              <a href="#" className="duration-300 hover:text-primary-color">
+                <FaYoutube className="text-lg" />
+              </a>
+            </li>
+            <li>
+              <a href="#" className="duration-300 hover:text-primary-color">
+                <FaGooglePlusG className="text-2xl" />
+              </a>
+            </li>
+          </ul>
+        </div>
 
+        <div className="flex flex-wrap md:flex-nowrap gap-10 justify-between pb-16 md:pb-[6.875rem]">
           {/* Links */}
           <div className="w-full max-w-[10.625rem]">
             <h5 className="text-lg font-semibold leading-[1.35rem] mb-8 sm:pl- 4">Links</h5>
@@ -66,22 +69,19 @@ const Footer = () => {
           <div className="w-full max-w-[16.875rem]">
             <h5 className="text-lg font-semibold leading-[1.35rem] mb-8">Contact</h5>
 
-            <p className="text-[#B5B5B5] text-sm leading-[1.875rem] font-semibold">
-              86 Road Broklyn Street, 600 <br />
-              New York, USA
-            </p>
+            <p className="text-[#B5B5B5] text-sm leading-[1.875rem] font-semibold">Surty&apos;s Private Hire, 23 Archibald Street, Gloucester, GL14EH</p>
 
             <ul className="space-y-2 text-sm leading-[1.875rem] font-semibold mt-7">
               <li>
-                <a href="mailto:needhelp@conexi.com" className="flex items-center gap-2">
+                <a href="mailto:ish@surtysprivatehire.co.uk" className="flex items-center gap-2">
                   <GrMail className="text-primary-color" />
-                  <span> needhelp@conexi.com</span>
+                  <span> ish@surtysprivatehire.co.uk</span>
                 </a>
               </li>
               <li>
-                <a href="tel:666 888 000" className="flex items-center gap-2">
+                <a href="tel:01452537993" className="flex items-center gap-2">
                   <FaPhoneSquareAlt className="text-primary-color" />
-                  <span> 666 888 000</span>
+                  <span> 01452 537993</span>
                 </a>
               </li>
             </ul>
@@ -92,7 +92,7 @@ const Footer = () => {
             <h5 className="text-lg font-semibold leading-[1.35rem] mb-8">Newsletter</h5>
 
             <p className="text-[#B5B5B5] text-sm leading-[1.875rem] font-semibold">
-              Sign up now for our mailing list to get all latest news and updates from conexi company.
+              Sign up now for our mailing list to get all latest news and updates from Surty&apos;s Private Hire.
             </p>
 
             <form className="mt-7">

@@ -110,7 +110,7 @@ function BannerComponent() {
     <div className="max-w-[1440px] w-10/12 mx-auto flex flex-col justify-center items-center h-full sm:pt-6 md:pt-20">
       <div className="text-white text-center">
         <motion.h1
-          className="md:max-w-[48.125rem] mx-auto text-[3.125rem] md:text-[5.625rem] font-bold leading-[3.75rem] md:leading-[6.25rem] tracking-[-0.02rem]"
+          className="md:max-w-[60.625rem] mx-auto text-[3.125rem] md:text-[5.625rem] font-bold leading-[3.75rem] md:leading-[6.25rem] tracking-[-0.02rem]"
           variants={{
             initial: {
               opacity: 0,
@@ -127,7 +127,7 @@ function BannerComponent() {
           initial="initial"
           whileInView="animate"
         >
-          Cheap & Trusted Taxi Company
+          Your Trusted Private Hire Company
         </motion.h1>
         <motion.p
           className="md:max-w-[31.25rem] text-[#cacaca] mx-auto text-xl md:text-[1.875rem] leading-7 md:leading-[2.5rem] font-medium mt-[2.6875rem] mb-10"
@@ -147,9 +147,13 @@ function BannerComponent() {
           initial="initial"
           whileInView="animate"
         >
-          Enjoy your comfortable trip with conexi company taxi
+          Enjoy a comfortable trip with surtys private hire
         </motion.p>
         <motion.button
+          onClick={() => {
+            document.getElementById("name-input").focus();
+            document.getElementById("book-now").scrollIntoView();
+          }}
           className="font-semibold bg-primary-color text-dark text-lg rounded-[2.4375rem] py-[1.3438rem] px-[3.6875rem] duration-[.4s] hover:bg-white active:scale-90"
           variants={{
             initial: {
@@ -168,7 +172,7 @@ function BannerComponent() {
           initial="initial"
           whileInView="animate"
         >
-          Learn More
+          Book Now
         </motion.button>
       </div>
     </div>

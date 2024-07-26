@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { FaFacebookF, FaGooglePlusG, FaTwitter, FaUserCircle, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaGooglePlusG, FaTwitter, FaYoutube } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { TbPhoneCall } from "react-icons/tb";
 import logo from "../../../assets/images/logo.png";
@@ -30,15 +30,9 @@ const Navbar = () => {
         <div className="text-white grid md:grid-cols-3 gap-6  px-4 py-9">
           <ul className="flex justify-center md:justify-start items-center gap-4">
             <li>
-              <a href="#" className="flex items-center gap-2">
-                <FaUserCircle className="text-primary-color" />
-                <span className="font-semibold text-xs sm:text-sm">Customer Sign In</span>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:needhelp@conexi.com" className="flex items-center gap-2">
+              <a href="mailto:ish@surtysprivatehire.co.uk" className="flex items-center gap-2">
                 <GrMail className="text-primary-color" />
-                <span className="font-semibold text-xs sm:text-sm"> needhelp@conexi.com</span>
+                <span className="font-semibold text-xs sm:text-sm"> ish@surtysprivatehire.co.uk</span>
               </a>
             </li>
           </ul>
@@ -50,7 +44,7 @@ const Navbar = () => {
           <div className="flex justify-center md:justify-end items-center">
             <ul className="flex gap-6 items-center">
               <li>
-                <a href="#" className="duration-300 hover:text-primary-color">
+                <a href="http://www.twitter.com/crisis786" className="duration-300 hover:text-primary-color">
                   <FaTwitter className="text-lg" />
                 </a>
               </li>
@@ -76,7 +70,7 @@ const Navbar = () => {
         <div className="bg-primary-color text-dark rounded-[2.9688rem] flex items-center justify-between">
           <div className="flex-grow sm:py-4 md:py-7 px-7 md:px-14">
             <NavDrawer></NavDrawer>
-            <ul className="hidden md:flex items-center justify-between text-sm font-medium tracking-[0.2rem]">
+            <ul className="hidden gap-16 md:flex items-center text-sm font-medium tracking-[0.2rem]">
               <NavLinks></NavLinks>
               {/* <li>
                 <a className="font-bold" href="#">
@@ -101,11 +95,11 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <a href="tel:888 888 0000" className="relative md:w-[20%] bg-dark rounded-r-[2.9688rem] pl-8 sm:pl-12 pr-6 sm:pr-7 py-3 sm:py-7">
+          <a href="tel:01452537993" className="relative md:w-[20%] bg-dark rounded-r-[2.9688rem] pl-8 sm:pl-12 pr-6 sm:pr-7 py-3 sm:py-7">
             <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark rounded-full p-2 sm:p-4">
               <TbPhoneCall className="text-primary-color text-xl sm:text-3xl" />
             </div>
-            <span className="text-primary-color sm:text-lg sm:leading-[1rem] font-semibold inline-block">888 888 0000</span>
+            <span className="text-primary-color sm:text-lg sm:leading-[1rem] font-semibold inline-block">01452 537993</span>
             <span className="text-white text-[0.6rem] sm:text-xs block tracking-[0.08rem] sm:tracking-[0.2rem] sm:mt-[0.125rem] leading-[1rem] font-semibold">
               PHONE LINE
             </span>
@@ -135,7 +129,7 @@ const Navbar = () => {
         <div className="max-w-[1440px] w-10/12 mx-auto flex items-center justify-between">
           <div className="flex-grow sm:py-4 md:py-7 px-7 md:px-14">
             <NavDrawerFixed></NavDrawerFixed>
-            <ul className="hidden md:flex items-center justify-between text-sm font-medium tracking-[0.2rem]">
+            <ul className="hidden gap-16 md:flex items-center text-sm font-medium tracking-[0.2rem]">
               <NavLinks></NavLinks>
               {/* <li>
                 <a className="font-bold" href="#">
@@ -164,7 +158,7 @@ const Navbar = () => {
             <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark rounded-full p-2 sm:p-4">
               <TbPhoneCall className="text-primary-color text-xl sm:text-3xl" />
             </div>
-            <span className="text-primary-color sm:text-lg sm:leading-[1rem] font-semibold inline-block">888 888 0000</span>
+            <span className="text-primary-color sm:text-lg sm:leading-[1rem] font-semibold inline-block">01452 537993</span>
             <span className="text-white text-[0.6rem] sm:text-xs block tracking-[0.08rem] sm:tracking-[0.2rem] sm:mt-[0.125rem] leading-[1rem] font-semibold">
               PHONE LINE
             </span>

@@ -38,7 +38,13 @@ const TaxiFares = () => {
             </ul>
 
             <div className="w-fit mx-auto">
-              <button className="w-fit font-semibold bg-dark text-white hover:text-dark text-lg rounded-[2.4375rem] py-[1rem] px-[3.6875rem] duration-[.4s] hover:bg-white active:scale-90">
+              <button
+                onClick={() => {
+                  document.getElementById("name-input").focus();
+                  document.getElementById("book-now").scrollIntoView();
+                }}
+                className="w-fit font-semibold bg-dark text-white hover:text-dark text-lg rounded-[2.4375rem] py-[1rem] px-[3.6875rem] duration-[.4s] hover:bg-white active:scale-90"
+              >
                 Order Taxi Now
               </button>
             </div>
@@ -71,7 +77,13 @@ const TaxiFares = () => {
             </ul>
 
             <div className="w-fit mx-auto">
-              <button className="w-fit font-semibold bg-dark text-white hover:text-dark text-lg rounded-[2.4375rem] py-[1rem] px-[3.6875rem] duration-[.4s] hover:bg-white active:scale-90">
+              <button
+                onClick={() => {
+                  document.getElementById("name-input").focus();
+                  document.getElementById("book-now").scrollIntoView();
+                }}
+                className="w-fit font-semibold bg-dark text-white hover:text-dark text-lg rounded-[2.4375rem] py-[1rem] px-[3.6875rem] duration-[.4s] hover:bg-white active:scale-90"
+              >
                 Order Taxi Now
               </button>
             </div>

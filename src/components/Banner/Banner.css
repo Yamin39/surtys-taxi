@@ -48,6 +48,15 @@
   right: 6.875rem;
 }
 
+.arrow--left-testi {
+  left: 6.875rem;
+}
+
+.arrow--right-testi {
+  left: auto;
+  right: 6.875rem;
+}
+
 @media (max-width: 768px) {
   .arrow {
     position: absolute;
@@ -64,5 +73,14 @@
   .arrow--right {
     left: auto;
     right: 3rem;
+  }
+
+  .arrow--left-testi {
+    left: 1rem;
+  }
+
+  .arrow--right-testi {
+    left: auto;
+    right: 1rem;
   }
 }

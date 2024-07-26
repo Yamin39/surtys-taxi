@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import bmwLogo from "../../assets/images/bmw-logo.png";
+import fordLogo from "../../assets/images/ford-logo.png";
 import mercedesLogo from "../../assets/images/mercedes-logo.png";
-import taxi1 from "../../assets/images/taxi-1.png";
-import taxi2 from "../../assets/images/taxi-2.png";
-import taxi3 from "../../assets/images/taxi-3.png";
-import toyotaLogo from "../../assets/images/toyota-logo.png";
+import taxi1 from "../../assets/images/taxi-1.jpg";
+import taxi2 from "../../assets/images/taxi-2.jpg";
+import taxi3 from "../../assets/images/taxi-3.jpg";
+import taxi4 from "../../assets/images/taxi-4.jpg";
 import "./ChooseTaxi.css";
 
 const ChooseTaxi = () => {
@@ -14,136 +15,54 @@ const ChooseTaxi = () => {
     {
       id: 1,
       taxiImg: taxi1,
-      logo: bmwLogo,
-      model: "M5 2008 Model",
+      logo: fordLogo,
+      model: "Ford S-MAX",
       baseRate: 4.3,
       PerMileOrKM: 2.0,
-      passengers: 4,
+      passengers: 6,
       category: "Hybrid taxi",
     },
+
+    // Sedan
     {
       id: 2,
       taxiImg: taxi2,
       logo: mercedesLogo,
-      model: "M5 2008 Model",
+      model: "Mercedes Sedan",
       baseRate: 4.3,
       PerMileOrKM: 2.0,
       passengers: 4,
-      category: "Hybrid taxi",
+      category: "Sedan",
     },
     {
       id: 3,
       taxiImg: taxi3,
-      logo: toyotaLogo,
-      model: "M5 2008 Model",
+      logo: bmwLogo,
+      model: "BMW Sedan",
       baseRate: 4.3,
       PerMileOrKM: 2.0,
       passengers: 4,
-      category: "Hybrid taxi",
+      category: "Sedan",
     },
 
-    // Town taxi
+    // Van
     {
       id: 4,
-      taxiImg: taxi1,
-      logo: bmwLogo,
-      model: "M5 2008 Model",
-      baseRate: 4.3,
-      PerMileOrKM: 2.0,
-      passengers: 4,
-      category: "Town taxi",
-    },
-    {
-      id: 5,
-      taxiImg: taxi2,
+      taxiImg: taxi4,
       logo: mercedesLogo,
-      model: "M5 2008 Model",
+      model: "Mercedes Van",
       baseRate: 4.3,
       PerMileOrKM: 2.0,
-      passengers: 4,
-      category: "Town taxi",
-    },
-    {
-      id: 6,
-      taxiImg: taxi3,
-      logo: toyotaLogo,
-      model: "M5 2008 Model",
-      baseRate: 4.3,
-      PerMileOrKM: 2.0,
-      passengers: 4,
-      category: "Town taxi",
-    },
-
-    // Limousine taxi
-    {
-      id: 7,
-      taxiImg: taxi1,
-      logo: bmwLogo,
-      model: "M5 2008 Model",
-      baseRate: 4.3,
-      PerMileOrKM: 2.0,
-      passengers: 4,
-      category: "Limousine taxi",
-    },
-    {
-      id: 8,
-      taxiImg: taxi2,
-      logo: mercedesLogo,
-      model: "M5 2008 Model",
-      baseRate: 4.3,
-      PerMileOrKM: 2.0,
-      passengers: 4,
-      category: "Limousine taxi",
-    },
-    {
-      id: 9,
-      taxiImg: taxi3,
-      logo: toyotaLogo,
-      model: "M5 2008 Model",
-      baseRate: 4.3,
-      PerMileOrKM: 2.0,
-      passengers: 4,
-      category: "Limousine taxi",
-    },
-
-    // SUV taxi
-    {
-      id: 10,
-      taxiImg: taxi1,
-      logo: bmwLogo,
-      model: "M5 2008 Model",
-      baseRate: 4.3,
-      PerMileOrKM: 2.0,
-      passengers: 4,
-      category: "SUV taxi",
-    },
-    {
-      id: 11,
-      taxiImg: taxi2,
-      logo: mercedesLogo,
-      model: "M5 2008 Model",
-      baseRate: 4.3,
-      PerMileOrKM: 2.0,
-      passengers: 4,
-      category: "SUV taxi",
-    },
-    {
-      id: 12,
-      taxiImg: taxi3,
-      logo: toyotaLogo,
-      model: "M5 2008 Model",
-      baseRate: 4.3,
-      PerMileOrKM: 2.0,
-      passengers: 4,
-      category: "SUV taxi",
+      passengers: 16,
+      category: "Van",
     },
   ];
 
-  const allCategories = [...new Set(allTaxi.map((taxi) => taxi.category))];
+  const allCategories = ["All", ...new Set(allTaxi.map((taxi) => taxi.category))];
 
   const [selectedCategory, setSelectedCategory] = useState(allCategories[0]);
 
-  const selectedTaxiData = allTaxi.filter((taxi) => taxi.category === selectedCategory);
+  const selectedTaxiData = selectedCategory === "All" ? allTaxi : allTaxi.filter((taxi) => taxi.category === selectedCategory);
 
   console.log(selectedTaxiData);
 
@@ -170,7 +89,7 @@ const ChooseTaxi = () => {
           ))}
         </div>
 
-        <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-[1.875rem]">
+        <div className="w-fit mx-auto flex flex-wrap justify-center md:justify-start gap-[1.875rem]">
           {selectedTaxiData.map((taxi) => (
             <motion.div
               key={taxi?.id}
@@ -191,7 +110,7 @@ const ChooseTaxi = () => {
               initial="initial"
               animate="animate"
             >
-              <div className="w-full max-w-[18.4375rem] mx-auto">
+              <div className="flex flex-col justify-center w-full min-h-[12.0625rem] max-w-[18.4375rem] mx-auto">
                 <img src={taxi?.taxiImg} alt={`${taxi?.model} image`} className="w-full" />
               </div>
 
@@ -203,16 +122,22 @@ const ChooseTaxi = () => {
                 <h3 className="mb-[0.9375rem] text-dark text-xl font-bold text-center leading-6">{taxi?.model}</h3>
                 <ul className="text-secondary-color leading-[2.125rem] ">
                   <li className="flex gap-4 justify-between items-center">
-                    <span>Base Rate:</span> <span className="font-semibold">{taxi?.baseRate}</span>
+                    <span>Base Rate:</span> <span className="font-semibold">${taxi?.baseRate}</span>
                   </li>
                   <li className="flex gap-4 justify-between items-center">
-                    <span>Per Mile/KM:</span> <span className="font-semibold">{taxi?.PerMileOrKM}</span>
+                    <span>Per Mile/KM:</span> <span className="font-semibold">${taxi?.PerMileOrKM}</span>
                   </li>
                   <li className="flex gap-4 justify-between items-center">
                     <span>Passengers:</span> <span className="font-semibold">{taxi?.passengers}</span>
                   </li>
                 </ul>
-                <button className="taxi-card-btn relative z-10 w-full p-3 px-10 mt-[1.875rem] rounded-[1.8125rem] bg-[#F3F3F3] text-secondary-color font-semibold leading-[2.125rem] duration-300 active:scale-90">
+                <button
+                  onClick={() => {
+                    document.getElementById("name-input").focus();
+                    document.getElementById("book-now").scrollIntoView();
+                  }}
+                  className="taxi-card-btn relative z-10 w-full p-3 px-10 mt-[1.875rem] rounded-[1.8125rem] bg-[#F3F3F3] text-secondary-color font-semibold leading-[2.125rem] duration-300 active:scale-90"
+                >
                   Book Taxi
                 </button>
               </div>

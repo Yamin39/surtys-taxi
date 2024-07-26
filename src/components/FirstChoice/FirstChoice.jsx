@@ -10,7 +10,7 @@ const FirstChoice = () => {
       <div className="max-w-[1440px] w-10/12 mx-auto">
         <div className="mb-[3.75rem] text-center">
           <span className="inline-block size-2 rounded-full bg-primary-color mt-1"></span>
-          <p className="font-semibold leading-[2.125rem] text-[#717171]">Welcome to conexi company</p>
+          <p className="font-semibold leading-[2.125rem] text-[#717171]">Welcome to Surtys Private Hire</p>
           <h1 className="text-[3.75rem] tracking-[-0.15rem] leading-[4.5rem] font-bold text-dark">
             Your first choice <br /> for traveling anywhere
           </h1>
@@ -38,9 +38,9 @@ const FirstChoice = () => {
             </div>
 
             <p className="text-[#717171] leading-[2.125rem]">
-              There are many variations of passages of lorem ipsum available but the majority have suffered alteration in some form by injected humour or random
-              words which don&apos;t look even slightly believable. If you are going to use a passage of lorem ipsum you need to be sure there isn&apos;t
-              anything embarrassing.
+              Our fleet of luxury executive cars and mini buses provide a great way to transport you around Gloucester. We have a wide range of vehicles for you
+              to choose from and we are happy to accommodate a variety of mini bus hire contracts in and around the area. All of our vehicles are clean safe and
+              comfortable and are periodically maintained to ensure we provide you with the best service.
             </p>
 
             <div className="mt-[3.4375rem] mb-[3.75rem] border-t-[0.125rem] bg-[#F3F3F3]"></div>
@@ -54,7 +54,7 @@ const FirstChoice = () => {
               </div>
 
               <h1 className="text-dark text-[1.875rem] font-bold tracking-[-0.075rem] leading-[2.125rem] duration-300 hover:text-primary-color">
-                <a href="tel:8888880000">888 888 0000</a>
+                <a href="tel:01452537993">01452 537993</a>
               </h1>
             </div>
           </div>
