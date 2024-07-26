@@ -8,6 +8,15 @@ html {
   scroll-behavior: smooth;
 }
 
+.stat-cards {
+  transition: all 0.4s;
+}
+
+.stat-cards:hover {
+  transform: translateY(-0.375rem);
+  box-shadow: 0 0 62.5rem 0 rgba(128, 128, 128, 0.226);
+}
+
 @media screen and (max-width: 640px) {
   html {
     font-size: 3.5vw;

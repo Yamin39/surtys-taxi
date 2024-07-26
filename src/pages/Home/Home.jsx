@@ -8,7 +8,6 @@ import ChooseTaxi from "../../components/ChooseTaxi/ChooseTaxi";
 import FirstChoice from "../../components/FirstChoice/FirstChoice";
 import Footer from "../../components/Footer/Footer";
 import NewsBlogs from "../../components/NewsBlogs/NewsBlogs";
-import NumbersSpeak from "../../components/NumbersSpeak/NumbersSpeak";
 import TaxiFares from "../../components/TaxiFares/TaxiFares";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
@@ -21,7 +20,6 @@ const Home = () => {
       <Banner></Banner>
       <BookNow></BookNow>
       <FirstChoice></FirstChoice>
-      <NumbersSpeak></NumbersSpeak>
       <CallAgent></CallAgent>
       <ChooseTaxi></ChooseTaxi>
       <WhyChooseUs></WhyChooseUs>
