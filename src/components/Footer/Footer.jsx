@@ -1,4 +1,4 @@
-import { FaFacebookF, FaGooglePlusG, FaPhoneSquareAlt, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaGooglePlusG, FaMobile, FaPhoneSquareAlt, FaTwitter, FaYoutube } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import logo from "../../assets/images/logo.png";
 import "./Footer.css";
@@ -109,15 +109,21 @@ const Footer = () => {
 
             <ul className="space-y-2 text-sm leading-[1.875rem] font-semibold mt-7">
               <li>
-                <a href="mailto:ish@surtysprivatehire.co.uk" className="flex items-center gap-2">
+                <a href="mailto:ish@surtys.co.uk" className="flex items-center gap-2">
                   <GrMail className="text-primary-color" />
-                  <span> ish@surtysprivatehire.co.uk</span>
+                  <span> ish@surtys.co.uk</span>
                 </a>
               </li>
               <li>
-                <a href="tel:01452537993" className="flex items-center gap-2">
+                <a href="tel:01452537993" className="flex items-center gap-2" title="Phone number">
                   <FaPhoneSquareAlt className="text-primary-color" />
                   <span> 01452 537993</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:07980811427" className="flex items-center gap-2" title="Mobile number">
+                  <FaMobile className="text-primary-color" />
+                  <span> 07980 811 427</span>
                 </a>
               </li>
             </ul>

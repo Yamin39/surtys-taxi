@@ -10,7 +10,9 @@ const NewsBlogs = () => {
       <div className="max-w-[1440px] w-10/12 mx-auto">
         <div className="mb-[3.75rem] text-center">
           <span className="inline-block size-2 rounded-full bg-primary-color mt-1"></span>
-          <p className="font-semibold leading-[2.125rem] text-[#717171]">Our achievements</p>
+          <p className="max-w-[22.5rem] mx-auto font-semibold leading-[2.125rem] text-[#717171]">
+            Best Mini Bus & Taxi Company of the year 2023 Gloucestershire
+          </p>
           <h1 className="text-[3.75rem] tracking-[-0.15rem] leading-[4.5rem] font-bold text-dark">Awards</h1>
         </div>
 

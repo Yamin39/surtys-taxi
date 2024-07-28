@@ -5,14 +5,14 @@
 }
 
 .number-slide1 {
-  background-image: url("../../assets/images/slide1.jpg");
+  background-image: url("../../assets/images/bus-2.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .number-slide2 {
-  background-image: url("../../assets/images/slide2.jpg");
+  background-image: url("../../assets/images/slide1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

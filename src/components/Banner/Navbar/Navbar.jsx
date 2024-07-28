@@ -30,15 +30,18 @@ const Navbar = () => {
         <div className="text-white grid md:grid-cols-3 gap-6 px-4 py-7">
           <ul className="flex justify-center md:justify-start items-center gap-4">
             <li>
-              <a href="mailto:ish@surtysprivatehire.co.uk" className="flex items-center gap-2">
+              <a href="mailto:ish@surtys.co.uk" className="flex items-center gap-2">
                 <GrMail className="text-primary-color" />
-                <span className="font-semibold text-xs sm:text-sm"> ish@surtysprivatehire.co.uk</span>
+                <span className="font-semibold text-xs sm:text-sm"> ish@surtys.co.uk</span>
               </a>
             </li>
           </ul>
 
-          <div className="flex justify-center">
-            <img className="max-h-[3.9rem] md:max-h-[5rem]" src={logo} alt="logo" />
+          <div className="flex flex-col items-center justify-center">
+            <div>
+              <img className="max-h-[3.9rem] md:max-h-[6.5rem]" src={logo} alt="logo" />
+            </div>
+            <p className="text-[#cacaca] text-sm sm:text-base mx-auto mt-3 font-medium">Award Winning Mini Bus and Taxi Company</p>
           </div>
 
           <div className="flex justify-center md:justify-end items-center">
@@ -75,14 +78,20 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <a href="tel:01452537993" className="relative md:w-[20%] bg-dark rounded-r-[2.9688rem] pl-8 sm:pl-12 pr-6 sm:pr-7 py-3 sm:py-7">
+          <a className="relative md:w-[20%] bg-dark rounded-r-[2.9688rem] pl-6 sm:pl-12 pr-8 sm:pr-7 py-3 sm:py-6">
             <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark rounded-full p-2 sm:p-4">
               <TbPhoneCall className="text-primary-color text-xl sm:text-3xl" />
             </div>
-            <span className="text-primary-color sm:text-lg sm:leading-[1rem] font-semibold inline-block">01452 537993</span>
-            <span className="text-white text-[0.6rem] sm:text-xs block tracking-[0.08rem] sm:tracking-[0.2rem] sm:mt-[0.125rem] leading-[1rem] font-semibold">
+            <a href="tel:07980811427" className="text-primary-color text-sm sm:text-base sm:leading-[1rem] font-semibold inline-block" title="Mobile number">
+              07980 811 427
+            </a>
+            <br />
+            <a href="tel:01452537993" className="text-primary-color text-sm sm:text-base sm:leading-[1rem] font-semibold inline-block" title="Phone number">
+              01452 537993
+            </a>
+            {/* <span className="text-white text-[0.6rem] sm:text-xs block tracking-[0.08rem] sm:tracking-[0.2rem] sm:mt-[0.125rem] leading-[1rem] font-semibold">
               PHONE LINE
-            </span>
+            </span> */}
           </a>
         </div>
       </nav>
@@ -107,7 +116,7 @@ const Navbar = () => {
         key={navbar}
       >
         <div className="max-w-[1440px] w-10/12 mx-auto flex items-center justify-between">
-          <div className="flex-grow sm:py-4 md:py-7 px-7 md:px-14">
+          <div className="flex-grow sm:py-4 md:py-6 px-7 md:px-14">
             <NavDrawerFixed></NavDrawerFixed>
             <ul className="hidden gap-16 md:flex items-center text-sm font-medium tracking-[0.2rem]">
               <NavLinks></NavLinks>
@@ -118,14 +127,20 @@ const Navbar = () => {
             <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark rounded-full p-2 sm:p-4">
               <TbPhoneCall className="text-primary-color text-xl sm:text-3xl" />
             </div>
-            <span className="text-primary-color sm:text-lg sm:leading-[1rem] font-semibold inline-block">01452 537993</span>
-            <span className="text-white text-[0.6rem] sm:text-xs block tracking-[0.08rem] sm:tracking-[0.2rem] sm:mt-[0.125rem] leading-[1rem] font-semibold">
+            <a href="tel:07980811427" className="text-primary-color text-sm sm:text-base sm:leading-[1rem] font-semibold inline-block" title="Mobile number">
+              07980 811 427
+            </a>
+            <br />
+            <a href="tel:01452537993" className="text-primary-color text-sm sm:text-base sm:leading-[1rem] font-semibold inline-block" title="Phone number">
+              01452 537993
+            </a>
+            {/* <span className="text-white text-[0.6rem] sm:text-xs block tracking-[0.08rem] sm:tracking-[0.2rem] sm:mt-[0.125rem] leading-[1rem] font-semibold">
               PHONE LINE
-            </span>
+            </span> */}
           </a>
         </div>
 
-        <div id="nav-right-overlay" className="absolute top-0 h-[4rem] sm:h-[6.15rem] md:h-[6.2rem] w-[20%] bg-dark ml-auto right-0"></div>
+        <div id="nav-right-overlay" className="absolute top-0 h-[4.5rem] sm:h-[6.5rem] md:h-[6.5rem] w-[20%] bg-dark ml-auto right-0"></div>
       </motion.nav>
     </header>
   );

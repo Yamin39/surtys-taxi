@@ -48,8 +48,14 @@ const FirstChoice = () => {
                 <p className="text-secondary-color leading-7">Call us now and make your booking</p>
               </div>
 
-              <h1 className="text-dark text-[1.875rem] font-bold tracking-[-0.075rem] leading-[2.125rem] duration-300 hover:text-primary-color">
-                <a href="tel:01452537993">01452 537993</a>
+              <h1 className="text-dark text-[1.875rem] font-bold tracking-[-0.075rem] leading-[2.125rem]">
+                <a className="duration-300 hover:text-primary-color" href="tel:01452537993" title="Phone number">
+                  01452 537993
+                </a>{" "}
+                <br />
+                <a className="duration-300 hover:text-primary-color" href="tel:07980811427" title="Mobile number">
+                  07980 811 427
+                </a>
               </h1>
             </div>
           </div>

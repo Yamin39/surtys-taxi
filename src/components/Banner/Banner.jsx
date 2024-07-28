@@ -107,7 +107,7 @@ function Arrow(props) {
 
 function BannerComponent() {
   return (
-    <div className="max-w-[1440px] w-10/12 mx-auto flex flex-col justify-center items-center h-full sm:pt-6 md:pt-20">
+    <div className="max-w-[1440px] w-10/12 mx-auto flex flex-col justify-center items-center h-full sm:pt-[7.5rem] md:pt-[17.5rem]">
       <div className="text-white text-center">
         <motion.h1
           className="md:max-w-[60.625rem] mx-auto text-[3.125rem] md:text-[5.625rem] font-bold leading-[3.75rem] md:leading-[6.25rem] tracking-[-0.02rem]"
