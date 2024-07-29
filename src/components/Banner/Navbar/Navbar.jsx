@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { FaFacebookF, FaGooglePlusG, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { TbPhoneCall } from "react-icons/tb";
 import logo from "../../../assets/images/logo.png";
@@ -49,21 +49,6 @@ const Navbar = () => {
               <li>
                 <a href="http://www.twitter.com/crisis786" className="duration-300 hover:text-primary-color">
                   <FaTwitter className="text-lg" />
-                </a>
-              </li>
-              <li>
-                <a href="#" className="duration-300 hover:text-primary-color">
-                  <FaFacebookF className="text-base" />
-                </a>
-              </li>
-              <li>
-                <a href="#" className="duration-300 hover:text-primary-color">
-                  <FaYoutube className="text-lg" />
-                </a>
-              </li>
-              <li>
-                <a href="#" className="duration-300 hover:text-primary-color">
-                  <FaGooglePlusG className="text-2xl" />
                 </a>
               </li>
             </ul>

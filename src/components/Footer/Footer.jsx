@@ -1,4 +1,4 @@
-import { FaFacebookF, FaGooglePlusG, FaMobile, FaPhoneSquareAlt, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaMobile, FaPhoneSquareAlt, FaTwitter } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import logo from "../../assets/images/logo.png";
 import "./Footer.css";
@@ -7,41 +7,26 @@ const Footer = () => {
   return (
     <footer className="bg-zigzag-animation relative bg-dark text-white">
       <div className="max-w-[1440px] w-10/12 mx-auto">
-        {/* About */}
-        <div className="w-full pt-[10rem] pb-16">
-          <h5 className="text-lg font-semibold leading-[1.35rem] mb-8">About</h5>
-          <p className="text-[#B5B5B5] text-sm leading-[1.875rem] font-semibold">
-            Surty’s Private Hire operates a range of vehicles offering wheelchair access, storage and reliability as well as cleanliness and safety. We are
-            relied on by regular clients for both business and pleasure. Our reputation is built on being professional and knowing what our clients need. All
-            our experienced staff are of the highest standard and plan your journey to ensure you meet your obligations – reliability comes as standard at
-            Surty’s Private Hire.
-          </p>
+        <div className="flex flex-wrap md:flex-nowrap gap-10 justify-between pt-[10rem] pb-16 md:pb-[6.875rem]">
+          {/* About */}
+          <div className="w-full max-w-[32rem]">
+            <h5 className="text-lg font-semibold leading-[1.35rem] mb-8">About</h5>
+            <p className="text-[#B5B5B5] text-sm leading-[1.875rem] font-semibold">
+              Surty’s Private Hire operates a range of vehicles offering wheelchair access, storage and reliability as well as cleanliness and safety. We are
+              relied on by regular clients for both business and pleasure. Our reputation is built on being professional and knowing what our clients need. All
+              our experienced staff are of the highest standard and plan your journey to ensure you meet your obligations – reliability comes as standard at
+              Surty’s Private Hire.
+            </p>
 
-          <ul className="flex gap-6 items-center mt-7">
-            <li>
-              <a href="http://www.twitter.com/crisis786" className="duration-300 hover:text-primary-color">
-                <FaTwitter className="text-lg" />
-              </a>
-            </li>
-            <li>
-              <a href="#" className="duration-300 hover:text-primary-color">
-                <FaFacebookF className="text-base" />
-              </a>
-            </li>
-            <li>
-              <a href="#" className="duration-300 hover:text-primary-color">
-                <FaYoutube className="text-lg" />
-              </a>
-            </li>
-            <li>
-              <a href="#" className="duration-300 hover:text-primary-color">
-                <FaGooglePlusG className="text-2xl" />
-              </a>
-            </li>
-          </ul>
-        </div>
+            <ul className="flex gap-6 items-center mt-7">
+              <li>
+                <a href="http://www.twitter.com/crisis786" className="duration-300 hover:text-primary-color">
+                  <FaTwitter className="text-lg" />
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        <div className="flex flex-wrap md:flex-nowrap gap-10 justify-between pb-16 md:pb-[6.875rem]">
           {/* Links */}
           <div className="w-full max-w-[10.625rem]">
             <h5 className="text-lg font-semibold leading-[1.35rem] mb-8 sm:pl- 4">Links</h5>
@@ -127,23 +112,6 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
-
-          {/* Newsletter */}
-          <div className="w-full max-w-[23.125rem]">
-            <h5 className="text-lg font-semibold leading-[1.35rem] mb-8">Newsletter</h5>
-
-            <p className="text-[#B5B5B5] text-sm leading-[1.875rem] font-semibold">
-              Sign up now for our mailing list to get all latest news and updates from Surty&apos;s Private Hire.
-            </p>
-
-            <form className="mt-7">
-              {/* email */}
-              <div className="w-full h-fit mx-auto flex items-center gap-3 text-sm bg-[#242424] text-[#cfcfcf] rounded-full pl-10 pr-3">
-                <input type="email" placeholder="Enter your email" name="email" className="bg-transparent w-full outline-none py-6" required />
-                <button className="text-dark hover:bg-white border-0 bg-primary-color btn btn-circle">Go</button>
-              </div>
-            </form>
           </div>
         </div>
 
