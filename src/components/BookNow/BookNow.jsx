@@ -10,10 +10,6 @@ const BookNow = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // console.log(form.current);
-    // toast.error("Failed to submit form. Please try again");
-    // return;
-
     emailjs
       .sendForm("service_n43vlgk", "template_mq36jug", form.current, {
         publicKey: "T8X0XGCdAR1bWVMwA",
@@ -79,18 +75,6 @@ const BookNow = () => {
             <input type="text" placeholder="Select time" name="time" className="bg-transparent w-full outline-none" required />
             <FaRegClock className="text-xl text-primary-color" />
           </div>
-          {/* <div className="w-full h-fit mx-auto flex items-center gap-3 text-sm bg-[#242424] text-[#b5b5b5] font-semibold rounded-full py-6 px-10">
-            <select defaultValue="default" name="Time" className="w-full bg-transparent mx-auto gap-3 text-base outline-none cursor-pointer">
-              <option disabled value="default">
-                Select Time
-              </option>
-              <option value="10AM-10.59AM">10AM-10.59AM</option>
-              <option value="12PM-12.59PM">12PM-12.59PM</option>
-              <option value="1PM-1.59PM">1PM-1.59PM</option>
-              <option value="2PM-2.59PM">2PM-2.59PM</option>
-            </select>
-            <FaRegClock className="text-xl text-primary-color" />
-          </div> */}
 
           <button className="font-semibold bg-primary-color text-dark text-lg rounded-[2.4375rem] py-4 px-[3.6875rem] duration-[.4s] hover:bg-white active:scale-90">
             Book Now
@@ -102,11 +86,3 @@ const BookNow = () => {
 };
 
 export default BookNow;
-
-// name
-// email
-// passengers
-// pickUpAddress
-// dropOffAddress
-// selectDate
-// role
