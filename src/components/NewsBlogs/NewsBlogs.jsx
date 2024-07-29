@@ -10,9 +10,7 @@ const NewsBlogs = () => {
       <div className="max-w-[1440px] w-10/12 mx-auto">
         <div className="mb-[3.75rem] text-center">
           <span className="inline-block size-2 rounded-full bg-primary-color mt-1"></span>
-          <p className="max-w-[22.5rem] mx-auto font-semibold leading-[2.125rem] text-[#717171]">
-            Best Mini Bus & Taxi Company of the year 2023 Gloucestershire
-          </p>
+          <p className="max-w-[22.5rem] mx-auto font-semibold leading-[2.125rem] text-[#717171]">Our awards and achievements</p>
           <h1 className="text-[3.75rem] tracking-[-0.15rem] leading-[4.5rem] font-bold text-dark">Awards</h1>
         </div>
 
@@ -36,7 +34,7 @@ const NewsBlogs = () => {
               </p>
             </div>
 
-            <h2 className="text-[1.875rem] font-bold tracking-[-0.075rem] leading-[2.25rem]">Best Mini Bus & Taxi Company 2023 Gloucestershire</h2>
+            <h2 className="text-[1.875rem] font-bold tracking-[-0.075rem] leading-[2.25rem]">Best Mini Bus & Taxi Company of the year 2023 Gloucestershire</h2>
 
             <p className="text-secondary-color leading-[2.125rem] mt-5">
               We achieved the Best Mini Bus & Taxi Company 2023 Gloucestershire Certificate in December 2023.
