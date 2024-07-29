@@ -53,7 +53,7 @@ const ChooseTaxi = () => {
       model: "Mercedes Van",
       baseRate: 4.3,
       PerMileOrKM: 2.0,
-      passengers: 16,
+      passengers: 8,
       category: "Van",
     },
   ];
