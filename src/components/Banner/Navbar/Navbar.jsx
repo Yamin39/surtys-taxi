@@ -74,9 +74,6 @@ const Navbar = () => {
             <a href="tel:01452537993" className="text-primary-color text-sm sm:text-base sm:leading-[1rem] font-semibold inline-block" title="Phone number">
               01452 537993
             </a>
-            {/* <span className="text-white text-[0.6rem] sm:text-xs block tracking-[0.08rem] sm:tracking-[0.2rem] sm:mt-[0.125rem] leading-[1rem] font-semibold">
-              PHONE LINE
-            </span> */}
           </a>
         </div>
       </nav>
@@ -119,9 +116,6 @@ const Navbar = () => {
             <a href="tel:01452537993" className="text-primary-color text-sm sm:text-base sm:leading-[1rem] font-semibold inline-block" title="Phone number">
               01452 537993
             </a>
-            {/* <span className="text-white text-[0.6rem] sm:text-xs block tracking-[0.08rem] sm:tracking-[0.2rem] sm:mt-[0.125rem] leading-[1rem] font-semibold">
-              PHONE LINE
-            </span> */}
           </a>
         </div>
 

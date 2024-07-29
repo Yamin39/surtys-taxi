@@ -8,10 +8,6 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // console.log(form.current);
-    // toast.error("Failed to submit form. Please try again");
-    // return;
-
     emailjs
       .sendForm("service_n43vlgk", "template_up2stin", form.current, {
         publicKey: "T8X0XGCdAR1bWVMwA",

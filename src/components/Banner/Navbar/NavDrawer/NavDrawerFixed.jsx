@@ -17,26 +17,6 @@ const NavDrawerFixed = () => {
         <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
           {/* Sidebar content here */}
           <NavLinks></NavLinks>
-          {/* <li>
-            <a className="font-bold" href="#">
-              HOME
-            </a>
-          </li>
-          <li>
-            <a href="#">ABOUT</a>
-          </li>
-          <li>
-            <a href="#">PAGES</a>
-          </li>
-          <li>
-            <a href="#">BOOK A RIDE</a>
-          </li>
-          <li>
-            <a href="#">BLOG</a>
-          </li>
-          <li>
-            <a href="#">CONTACT</a>
-          </li> */}
         </ul>
       </div>
     </div>
