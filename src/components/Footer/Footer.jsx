@@ -12,10 +12,7 @@ const Footer = () => {
           <div className="w-full max-w-[32rem]">
             <h5 className="text-lg font-semibold leading-[1.35rem] mb-8">About</h5>
             <p className="text-[#B5B5B5] text-sm leading-[1.875rem] font-semibold">
-              Surty’s Private Hire operates a range of vehicles offering wheelchair access, storage and reliability as well as cleanliness and safety. We are
-              relied on by regular clients for both business and pleasure. Our reputation is built on being professional and knowing what our clients need. All
-              our experienced staff are of the highest standard and plan your journey to ensure you meet your obligations – reliability comes as standard at
-              Surty’s Private Hire.
+              Surty’s Private Hire operates a range of vehicles, storage and reliability as well as cleanliness and safety. We are relied on by regular clients for both business and pleasure. Our reputation is built on being professional and knowing what our clients need. All our experienced staff are of the highest standard and plan your journey to ensure you meet your obligations – reliability comes as standard at Surty’s Private Hire.
             </p>
 
             <ul className="flex gap-6 items-center mt-7">
