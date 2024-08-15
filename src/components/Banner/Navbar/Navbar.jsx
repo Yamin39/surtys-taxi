@@ -30,9 +30,9 @@ const Navbar = () => {
         <div className="text-white grid md:grid-cols-3 gap-6 px-4 py-7">
           <ul className="flex justify-center md:justify-start items-center gap-4">
             <li>
-              <a href="mailto:ish@surtys.co.uk" className="flex items-center gap-2">
+              <a href="mailto:surtysprivatehire.co.uk" className="flex items-center gap-2">
                 <GrMail className="text-primary-color" />
-                <span className="font-semibold text-xs sm:text-sm"> ish@surtys.co.uk</span>
+                <span className="font-semibold text-xs sm:text-sm"> surtysprivatehire.co.uk</span>
               </a>
             </li>
           </ul>

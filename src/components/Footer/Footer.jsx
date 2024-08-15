@@ -94,9 +94,9 @@ const Footer = () => {
 
             <ul className="space-y-2 text-sm leading-[1.875rem] font-semibold mt-7">
               <li>
-                <a href="mailto:ish@surtys.co.uk" className="flex items-center gap-2">
+                <a href="mailto:ish@surtysprivatehire.co.uk" className="flex items-center gap-2">
                   <GrMail className="text-primary-color" />
-                  <span> ish@surtys.co.uk</span>
+                  <span> ish@surtysprivatehire.co.uk</span>
                 </a>
               </li>
               <li>
@@ -122,8 +122,8 @@ const Footer = () => {
             </div>
             <p className="text-[#B5B5B5] text-sm leading-[1.875rem] font-semibold">
               © {new Date().getFullYear()}{" "}
-              <a href="https://www.surtys.co.uk/" className="text-primary-color">
-                surtys.co.uk
+              <a href="https://www.surtysprivatehire.co.uk/" className="text-primary-color">
+                surtysprivatehire.co.uk
               </a>
             </p>
           </div>

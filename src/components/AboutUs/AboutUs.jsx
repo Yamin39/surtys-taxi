@@ -21,17 +21,7 @@ const AboutUs = () => {
 
           <div className="md:max-w-[50%] w-full border-l-[1rem] border-l-primary-color px-10 py-5">
             <p className="mt-5 text-sm sm:text-base leading-[1.8] sm:leading-[1.85]">
-              Surty’s Private Hire operates a range of vehicles offering 4 to 16 seaters, storage and reliability as well as cleanliness and safety. We are
-              relied on by regular clients for both business and pleasure. Our reputation is built on being professional and knowing what our clients needs. All
-              our experienced staff are DBS Checked, First Aid trained and of the highest standard. We plan your journey to ensure you meet your obligations –
-              reliability comes as standard at Surty’s Private Hire.
-              <br />
-              <br />
-              Our prices are competitive and represent excellent value for money. Every job is priced according to the individual requirements, so please don’t
-              hesitate to call and ask for a quote, we will be happy to help.
-              <br />
-              <br />
-              We can tailor our service to meet your transport need, simply call or email for a journey plan and quote that will set your mind at ease.
+              Surty’s Private Hire operates a range of vehicles, storage and reliability as well as cleanliness and safety. We are relied on by regular clients for both business and pleasure. Our reputation is built on being professional and knowing what our clients need. All our experienced staff are of the highest standard and plan your journey to ensure you meet your obligations – reliability comes as standard at Surty’s Private Hire.
             </p>
           </div>
         </div>
