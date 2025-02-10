@@ -91,9 +91,9 @@ const Footer = () => {
 
             <ul className="space-y-2 text-sm leading-[1.875rem] font-semibold mt-7">
               <li>
-                <a href="mailto:ish@surtysprivatehire.co.uk" className="flex items-center gap-2">
+                <a href="mailto:ish@surtys.co.uk" className="flex items-center gap-2">
                   <GrMail className="text-primary-color" />
-                  <span> ish@surtysprivatehire.co.uk</span>
+                  <span> ish@surtys.co.uk</span>
                 </a>
               </li>
               <li>
