@@ -1,7 +1,5 @@
 # Surty's Private Hire
 
-![Surty's Private Hire Logo](./src/assets/images/logo.png)
-
 ## Overview
 
 Surty's Private Hire is a professional taxi and mini-bus service website for a Gloucester-based company. The website showcases the company's services, allows customers to book rides, view taxi fares, and contact the business directly.
